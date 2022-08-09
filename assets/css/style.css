@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 .select-disable {
@@ -20,10 +21,14 @@ body {
 
 .header {
     height: 97vh;
-    background-image: url("../img/background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 16px;
+}
+
+.background {
+    position: absolute;
+    top: -10%;
+    width: 100vw;
+    z-index: -1;
 }
 
 .navbar {
