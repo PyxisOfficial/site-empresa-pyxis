@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.select-disable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.header {
+    height: 97vh;
+    background-image: url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+}
+
+.logo-navbar {
+    max-height: 66px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin-left: 18vw;
+}
+
+.bottom_animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #266ef3;
+    transition: width .3s;
+    border-radius: 25px;
+    margin-top: 2px;
+}
+
+.bottom_animation:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar-list-item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 50px;
+}
+
+.navbar-links {
+    text-decoration: none;
+    color: #FFFFFF;
+}
