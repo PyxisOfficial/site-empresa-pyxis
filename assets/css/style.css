@@ -81,7 +81,6 @@ body {
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-<<<<<<< HEAD
     pointer-events: none;
 }
 
@@ -97,14 +96,20 @@ body {
     100% {
         transform: translate(-3840px, 0);
     }
-=======
 }
 
 @keyframes estrelas_animation {
-    0% { transform: translate(0%, 0); }
-    50% { transform: translate(-1920px, 0); }
-    100% { transform: translate(-3840px, 0); }
->>>>>>> cc5c1b6950c06789e97f2ed2a12c81545af68185
+    0% {
+        transform: translate(0%, 0);
+    }
+
+    50% {
+        transform: translate(-1920px, 0);
+    }
+
+    100% {
+        transform: translate(-3840px, 0);
+    }
 }
 
 .navbar-list {
@@ -301,7 +306,6 @@ body {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
 
 .main {
     padding-top: 130px;
@@ -332,5 +336,3 @@ body {
     -moz-box-shadow: 10px 12px 1px #161650;
     box-shadow: 10px 12px 1px #161650;
 }
-=======
->>>>>>> cc5c1b6950c06789e97f2ed2a12c81545af68185
