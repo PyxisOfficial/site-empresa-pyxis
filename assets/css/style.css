@@ -182,21 +182,9 @@ body {
     pointer-events: none;
 }
 
-.computador-top {
-    max-width: 425px;
-    position: absolute;
-}
-
-.planeta-top {
-    max-width: 425px;
-    position: absolute;
-}
-
-.alavancas {
-    max-width: 425px;
-    position: absolute;
-}
-
+.computador-top,
+.planeta-top,
+.alavancas,
 .luzes {
     max-width: 425px;
     position: absolute;
@@ -328,9 +316,7 @@ body {
     display: block;
     width: 270px;
     height: 15px;
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
     background: #DDDDFA;
     position: relative;
     top: 35px;
