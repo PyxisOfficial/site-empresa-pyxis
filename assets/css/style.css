@@ -69,9 +69,9 @@ body {
 
 .navbar-ativo {
     background-color: #fff;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo-navbar {
@@ -82,6 +82,7 @@ body {
     position: absolute;
     left: 0;
     pointer-events: none;
+    height: 100vh;
 }
 
 .estrelas_animation {
@@ -90,20 +91,6 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     pointer-events: none;
-}
-
-@keyframes estrelas_animation {
-    0% {
-        transform: translate(0%, 0);
-    }
-
-    50% {
-        transform: translate(-1920px, 0);
-    }
-
-    100% {
-        transform: translate(-3840px, 0);
-    }
 }
 
 @keyframes estrelas_animation {
@@ -342,24 +329,14 @@ body {
     width: 270px;
     height: 15px;
     -webkit-transform: skew(-20deg);
-       -moz-transform: skew(-20deg);
-         -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
     background: #DDDDFA;
     position: relative;
     top: 35px;
     z-index: -1;
 }
 
-.bottom_animation::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background: #266ef3;
-    transition: width .3s;
-    border-radius: 25px;
-    margin-top: 2px;
-}
 .container-cards {
     margin-top: 60px;
     display: flex;
