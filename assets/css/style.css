@@ -77,7 +77,7 @@ body {
 
 .estrelas_animation {
     animation-name: estrelas_animation;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
