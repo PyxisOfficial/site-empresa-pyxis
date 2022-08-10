@@ -70,6 +70,24 @@ body {
     max-height: 50px;
 }
 
+.estrelas {
+    position: absolute;
+    left: 0;
+}
+
+.estrelas_animation {
+    animation-name: estrelas_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes estrelas_animation {
+    0% { transform: translate(0%, 0); }
+    50% { transform: translate(-1920px, 0); }
+    100% { transform: translate(-3840px, 0); }
+}
+
 .navbar-list {
     list-style: none;
     display: flex;
