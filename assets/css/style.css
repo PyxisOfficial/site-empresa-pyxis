@@ -64,10 +64,18 @@ body {
     padding-bottom: 11px;
     width: 100vw;
     z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-ativo {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .logo-navbar {
-    max-height: 50px;
+    max-height: 60px;
 }
 
 .estrelas {
@@ -142,7 +150,12 @@ body {
 
 .navbar-links {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-links-ativo {
+    color: #000;
 }
 
 .titulo-header,
@@ -321,18 +334,21 @@ body {
 }
 
 .container-cards {
-    margin-top: 70px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 300px;
     height: 370px;
+    margin: 20px;
     border: 1px solid #000;
     border-radius: 14px;
     background-color: #fff;
     -webkit-box-shadow: 10px 12px 1px #161650;
     -moz-box-shadow: 10px 12px 1px #161650;
     box-shadow: 10px 12px 1px #161650;
+    flex-shrink: 0;
 }
