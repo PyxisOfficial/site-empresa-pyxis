@@ -73,6 +73,7 @@ body {
 .estrelas {
     position: absolute;
     left: 0;
+    pointer-events: none;
 }
 
 .estrelas_animation {
