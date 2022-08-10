@@ -6,9 +6,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 .select-disable {
@@ -21,14 +26,18 @@ body {
 
 .header {
     height: 97vh;
-    padding-top: 16px;
+    background-image: url("../img/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 22px;
+    background-position: 24% 24%;
 }
 
-.background {
-    position: absolute;
-    top: -10%;
-    width: 100vw;
-    z-index: -1;
+.content-header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 22vh;
 }
 
 .navbar {
@@ -36,10 +45,13 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 7vh;
+    position: fixed;
+    width: 100vw;
 }
 
 .logo-navbar {
     max-height: 100%;
+    pointer-events: none;
 }
 
 .navbar-list {
@@ -73,4 +85,160 @@ body {
 .navbar-links {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.titulo-header,
+.descricao-header {
+    color: #fff;
+}
+
+.btn-header {
+    background-color: #266ef3;
+    color: #fff;
+    border: 1px solid #266ef3;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    background-color: #fff;
+    color: #266ef3;
+    transition: .4s;
+}
+
+.imgs-top {
+    width: 325px;
+    height: 325px;
+    max-width: 325px;
+    max-height: 325px;
+    pointer-events: none;
+}
+
+.computador-top {
+    max-width: 325px;
+    position: absolute;
+}
+
+.planeta-top {
+    max-width: 325px;
+    position: absolute;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -10px);
+    }
+}
+
+.alavancas {
+    max-width: 325px;
+    position: absolute;
+}
+
+.green-lever {
+    animation-name: green-lever;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes green-lever {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.red-lever {
+    animation-name: red-lever;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes red-lever {
+    0% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -10px);
+    }
+}
+
+.yellow-lever {
+    animation-name: yellow-lever;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes yellow-lever {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.luzes {
+    max-width: 325px;
+    position: absolute;
+}
+
+.red-light {
+    animation-name: red-light;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes red-light {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
