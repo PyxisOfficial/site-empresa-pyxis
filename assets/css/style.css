@@ -14,6 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     max-width: 100%;
+    height: 400vw;
 }
 
 .select-disable {
@@ -29,9 +30,8 @@ body {
     background-image: url("../img/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     padding-top: 22px;
-    background-position: 24% 24%;
+    background-position: 24% 100%;
 }
 
 .content-header {
@@ -44,14 +44,16 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 7vh;
     position: fixed;
+    top: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
     width: 100vw;
+    z-index: 1;
 }
 
 .logo-navbar {
-    max-height: 100%;
-    pointer-events: none;
+    max-height: 50px;
 }
 
 .navbar-list {
@@ -95,19 +97,25 @@ body {
 .btn-header {
     background-color: #266ef3;
     color: #fff;
-    border: 1px solid #266ef3;
+    border: none;
     width: 150px;
+    height: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50px;
     margin-top: 20px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px -1px #2873FF;
+    box-shadow: 0px 0px 15px -1px #2873FF;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
 }
 
 .btn-header:hover {
-    background-color: #fff;
-    color: #266ef3;
-    transition: .4s;
+    background-color: #588ff7;
+    -webkit-box-shadow: 0px 0px 15px -1px #508cfc;
+    box-shadow: 0px 0px 15px -1px #508cfc;
 }
 
 .imgs-top {
@@ -124,6 +132,16 @@ body {
 }
 
 .planeta-top {
+    max-width: 325px;
+    position: absolute;
+}
+
+.alavancas {
+    max-width: 325px;
+    position: absolute;
+}
+
+.luzes {
     max-width: 325px;
     position: absolute;
 }
@@ -147,11 +165,6 @@ body {
     100% {
         transform: translate(0, -10px);
     }
-}
-
-.alavancas {
-    max-width: 325px;
-    position: absolute;
 }
 
 .green-lever {
@@ -215,11 +228,6 @@ body {
     100% {
         transform: translate(0, 0);
     }
-}
-
-.luzes {
-    max-width: 325px;
-    position: absolute;
 }
 
 .red-light {
