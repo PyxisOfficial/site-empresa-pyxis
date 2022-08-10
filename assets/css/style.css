@@ -331,8 +331,35 @@ body {
 
 .titulo-servicos {
     color: #494949;
+    text-transform: uppercase;
+    text-align: center;
+    width: 270px;
 }
 
+.titulo-servicos::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 15px;
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+    background: #DDDDFA;
+    position: relative;
+    top: 35px;
+    z-index: -1;
+}
+
+.bottom_animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #266ef3;
+    transition: width .3s;
+    border-radius: 25px;
+    margin-top: 2px;
+}
 .container-cards {
     margin-top: 60px;
     display: flex;
@@ -344,11 +371,24 @@ body {
     width: 300px;
     height: 370px;
     margin: 20px;
-    border: 1px solid #000;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 14px;
     background-color: #fff;
     -webkit-box-shadow: 10px 12px 1px #161650;
     -moz-box-shadow: 10px 12px 1px #161650;
     box-shadow: 10px 12px 1px #161650;
     flex-shrink: 0;
+}
+
+.titulo-card {
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #162680;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
 }
