@@ -176,9 +176,7 @@ body {
     margin-top: 16px;
 }
 
-.titulo-header,
-.descricao-header,
-.texto-contato {
+.texto-branco {
     color: #fff;
 }
 
@@ -387,11 +385,58 @@ body {
 }
 
 
+#equipe {
+    margin-top: 130px;
+    height: 125vh;
+    background-image: url("../img/fundo-azul.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-equipe {
+    padding-top: 12vh;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+        "foto foto foto"
+        "foto foto foto"
+        "foto foto foto";
+    grid-column-gap: 170px;
+    grid-row-gap: 35px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.titulo-equipe {
+    grid-area: titulo;
+}
+
+.div-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 180px;
+    height: 180px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 .footer {
     display: flex;
     justify-content: space-evenly;
     height: 32vh;
-    background-color: #000123;
+    background-color: #090934;
     margin-top: 50px;
     padding-bottom: 60px;
 }
