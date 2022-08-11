@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body::-webkit-scrollbar {
@@ -27,7 +28,6 @@ body::-webkit-scrollbar-thumb {
 body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 .select-disable {
@@ -62,7 +62,7 @@ body {
     padding-top: 11px;
     padding-bottom: 11px;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
     transition: all .5s ease-in-out;
 }
 
@@ -79,7 +79,7 @@ body {
 
 .container-estrelas {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .estrelas {
@@ -149,6 +149,33 @@ body {
     color: #000;
 }
 
+.textos-header {
+    width: 400px;
+    z-index: 1;
+}
+
+.titulo-azul {
+    color: #6e8bfd;
+}
+
+.titulo-header::before {
+    content: '';
+    display: block;
+    width: 118px;
+    height: 12px;
+    transform: skew(-20deg);
+    background-color: #14319d;
+    position: relative;
+    left: 179px;
+    top: 41px;
+    z-index: -1;
+}
+
+.descricao-header {
+    font-size: 15px;
+    margin-top: 16px;
+}
+
 .titulo-header,
 .descricao-header,
 .texto-contato {
@@ -159,12 +186,10 @@ body {
     background-color: #266ef3;
     color: #fff;
     border: none;
-    width: 150px;
-    height: 35px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 190px;
+    height: 42px;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 24px;
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 15px -1px #2873FF;
     box-shadow: 0px 0px 15px -1px #2873FF;
