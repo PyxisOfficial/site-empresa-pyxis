@@ -536,6 +536,18 @@ body {
     letter-spacing: 2px;
 }
 
+.titulo-sobre::before {
+    content: '';
+    display: block;
+    width: 152px;
+    height: 15px;
+    transform: skew(-20deg);
+    background: #DDDDFA;
+    position: relative;
+    top: 35px;
+    z-index: -1;
+}
+
 .container-sobre {
     display: flex;
     flex-direction: column;
@@ -567,7 +579,6 @@ body {
     justify-content: space-evenly;
     height: 32vh;
     background-color: #000123;
-    margin-top: 50px;
     padding-bottom: 60px;
 }
 
@@ -631,6 +642,7 @@ body {
 }
 
 .card-footer-contato {
+    margin-top: 34px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -638,10 +650,7 @@ body {
 }
 
 .icones-footer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-bottom: 24px;
 }
 
 .footer-list-contato {
