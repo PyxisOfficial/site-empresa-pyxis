@@ -337,7 +337,8 @@ body {
     padding-top: 130px;
 }
 
-#servicos {
+#servicos,
+#projetos {
     margin-left: 90px;
     margin-right: 90px;
 }
@@ -442,7 +443,7 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
 }
 
 .div-redes-sociais {
@@ -466,22 +467,16 @@ body {
     font-weight: 500;
 }
 
-#projetos {
-    margin-left: 90px;
-    margin-right: 90px;
-}
-
 .container-projetos {
     margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .projeto {
     width: 450px;
     height: 400px;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 14px;
     box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.1);
     text-align: center;
@@ -518,9 +513,14 @@ body {
 #sobre {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin-top: 90px;
     margin-left: 120px;
     margin-right: 120px;
+}
+
+#sobre img {
+    margin-right: 80px;
 }
 
 .titulo-sobre {
@@ -541,7 +541,7 @@ body {
 }
 
 .texto-sobre {
-    margin: 100px;
+    padding-top: 80px;
     text-align: justify;
     font-size: large;
 }
