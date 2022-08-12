@@ -454,6 +454,11 @@ body {
     width: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.redes-sociais:hover {
+    transform: scale(1.3);
 }
 
 .nome-equipe {
