@@ -516,13 +516,14 @@ body {
 }
 
 #sobre {
+    display: flex;
+    justify-content: center;
     margin-top: 90px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .titulo-sobre {
-    margin-left: 750px;
     color: #494949;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -530,8 +531,9 @@ body {
 
 .container-sobre {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-sobre {
@@ -540,7 +542,6 @@ body {
 
 .texto-sobre {
     margin: 100px;
-    width: 750px;
     text-align: justify;
     font-size: large;
 }
