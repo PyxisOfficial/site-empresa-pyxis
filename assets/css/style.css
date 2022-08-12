@@ -350,7 +350,7 @@ body {
     color: #494949;
     text-transform: uppercase;
     text-align: center;
-    width: 270px;
+    display: inline-block;
 }
 
 .titulo-servicos::before {
@@ -404,14 +404,14 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 130px;
-    height: 182vh;
+    height: 1200px;
     background-image: url("../img/backgrounds/fundo-azul.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .container-equipe {
-    margin-top: -110px;
+    margin-top: -90px;
     display: grid;
     grid-template-areas: "titulo titulo titulo"
         "foto foto foto"
@@ -494,18 +494,19 @@ body {
     flex-shrink: 0;
 }
 
-.titulo-projetos {
+.titulo-projetos,
+.titulo-sobre,
+.titulo-historico {
     color: #494949;
     text-transform: uppercase;
     letter-spacing: 2px;
-    width: 150px;
-    text-align: center;
+    display: inline-block;
 }
 
 .titulo-projetos::before {
     content: '';
     display: block;
-    width: 144px;
+    width: 136px;
     height: 15px;
     transform: skew(-20deg);
     background: #DDDDFA;
@@ -526,14 +527,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 90px;
-    margin-left: 120px;
-    margin-right: 120px;
-}
-
-.titulo-sobre {
-    color: #494949;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-left: 260px;
+    margin-right: 260px;
 }
 
 .titulo-sobre::before {
@@ -561,17 +556,61 @@ body {
 }
 
 .texto-sobre {
-    padding-top: 80px;
+    padding-top: 40px;
     text-align: justify;
     font-size: large;
 }
 
-#linhaTempo {
+#historico {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 150px;
-    height: 140vh;
-    background-image: url("../img/backgrounds/fundo-linha-do-tempo.svg");
+    background-image: url("../img/backgrounds/fundo-historico.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-historico {
+    height: 900px;
+}
+
+.titulo-historico {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imgs-lt {
+    pointer-events: none;
+    position: relative;
+}
+
+.data-historico {
+    color: #0e2c68;
+    margin-bottom: 14px;
+}
+
+.texto-container-1 {
+    width: 300px;
+    position: relative;
+    top: -760px;
+    left: 420px;
+}
+
+.texto-container-2 {
+    width: 300px;
+    position: relative;
+    top: -610px;
+    left: 100px;
+}
+
+.texto-container-3 {
+    width: 300px;
+    position: relative;
+    top: -430px;
+    left: 430px;
 }
 
 .footer {
