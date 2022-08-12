@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -40,11 +40,12 @@ body {
 
 .header {
     height: 97vh;
-    background-image: url("../img/background.svg");
+    background-image: url("../img/backgrounds/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 22px;
     background-position: 24% 100%;
+    overflow: hidden;
 }
 
 .content-header {
@@ -155,19 +156,27 @@ body {
 }
 
 .titulo-azul {
-    color: #6e8bfd;
+    color: #266ef3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.titulo-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .titulo-header::before {
     content: '';
     display: block;
-    width: 118px;
+    width: 120px;
     height: 12px;
     transform: skew(-20deg);
     background-color: #14319d;
     position: relative;
-    left: 179px;
-    top: 41px;
+    left: 160px;
+    top: 33px;
     z-index: -1;
 }
 
@@ -192,7 +201,8 @@ body {
     -webkit-box-shadow: 0px 0px 15px -1px #2873FF;
     box-shadow: 0px 0px 15px -1px #2873FF;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: larger;
     transition: all .4s ease-in-out;
 }
 
@@ -388,7 +398,7 @@ body {
 #equipe {
     margin-top: 130px;
     height: 125vh;
-    background-image: url("../img/fundo-azul.svg");
+    background-image: url("../img/backgrounds/fundo-azul.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -408,35 +418,142 @@ body {
 
 .titulo-equipe {
     grid-area: titulo;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .div-foto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    width: 180px;
-    height: 180px;
+    justify-content: space-between;
+    width: 210px;
+    height: 245px;
 }
 
 .foto {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background-color: #fff;
 }
 
 .foto img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    border: 2px solid #FFF;
+}
+
+.div-redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes-sociais {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nome-equipe {
+    font-size: larger;
+    font-weight: 500;
+}
+
+#projetos {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.container-projetos {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    width: 450px;
+    height: 400px;
+    background-color: #FFF;
+    border-radius: 14px;
+    box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.titulo-projetos {
+    color: #494949;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 150px;
+    text-align: center;
+}
+
+.titulo-projetos::before {
+    content: '';
+    display: block;
+    width: 144px;
+    height: 15px;
+    transform: skew(-20deg);
+    background: #DDDDFA;
+    position: relative;
+    top: 35px;
+    z-index: -1;
+}
+
+.em-breve {
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 400px;
+    color: #cacaca;
+}
+
+#sobre {
+    margin-top: 90px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.titulo-sobre {
+    margin-left: 750px;
+    color: #494949;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.logo-sobre {
+    width: 400px;
+}
+
+.texto-sobre {
+    margin: 100px;
+    width: 750px;
+    text-align: justify;
+    font-size: large;
+}
+
+#linhaTempo {
+    margin-top: 150px;
+    background-image: url("../img/backgrounds/fundo-linha-do-tempo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: 20% 0%;
 }
 
 .footer {
     display: flex;
     justify-content: space-evenly;
     height: 32vh;
-    background-color: #090934;
+    background-color: #000123;
     margin-top: 50px;
     padding-bottom: 60px;
 }
