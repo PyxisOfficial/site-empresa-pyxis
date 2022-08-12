@@ -501,6 +501,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .titulo-projetos::before {
@@ -700,4 +701,14 @@ body {
 .item-contato {
     margin-top: 10px;
     color: #fff;
+}
+
+/* mobile e tablets */
+@media (max-width: 1000px) {
+
+}
+
+/* telas maiores */
+@media (min-width: 2000px) {
+
 }
