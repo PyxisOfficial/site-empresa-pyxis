@@ -439,6 +439,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 130px;
+    margin-left: -2px;
     height: 1200px;
     background-image: url("../img/backgrounds/fundo-azul.svg");
     background-size: cover;
