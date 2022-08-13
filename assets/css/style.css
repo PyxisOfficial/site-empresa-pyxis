@@ -351,6 +351,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .titulo-servicos::before {
@@ -386,10 +387,12 @@ body {
 }
 
 .titulo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     width: 100%;
     height: 40px;
-    line-height: 40px;
     background: #162680;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -583,7 +586,7 @@ body {
     margin-bottom: 50px;
 }
 
-.imgs-lt {
+.imgs-historico {
     pointer-events: none;
     position: relative;
 }
@@ -703,12 +706,410 @@ body {
     color: #fff;
 }
 
-/* mobile e tablets */
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
+    .content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .textos-header {
+        width: 250px;
+    }
+
+    .titulo-header,
+    .titulo-azul {
+        font-size: 17px;
+    }
+
+    .titulo-header::before {
+        width: 90px;
+        height: 7px;
+        left: 118px;
+        top: 22px;
+    }
+
+    .descricao-header {
+        font-size: 13px;
+    }
+
+    .btn-header {
+        width: 150px;
+        height: 24px;
+        font-size: smaller;
+        margin-bottom: 24px;
+    }
+
+    .imgs-top {
+        width: 200px;
+        height: 200px;
+    }
+
+    .computador-top,
+    .planeta-top,
+    .alavancas,
+    .luzes {
+        width: 200px;
+    }
+
+    .card {
+        width: 230px;
+        height: 270px;
+    }
+
+    #equipe {
+        height: 3100px;
+    }
+
+    .container-equipe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #servicos,
+    #projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-sobre,
+    .titulo-servicos,
+    .titulo-projetos,
+    .titulo-historico {
+        font-size: 1em;
+    }
+
+    .titulo-servicos::before {
+        width: 181px;
+        height: 8px;
+        top: 20px;
+    }
+
+    .titulo-card {
+        font-size: 1em;
+    }
+
+    .titulo-equipe {
+        font-size: 13px;
+    }
+
+    .titulo-projetos::before {
+        width: 96px;
+        height: 8px;
+        top: 20px;
+    }
+
+    .projeto {
+        width: 250px;
+        height: 200px;
+    }
+
+    .em-breve {
+        font-size: 2em;
+    }
+
+    #sobre {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .titulo-sobre::before {
+        width: 108px;
+        height: 8px;
+        top: 20px;
+    }
+
+    .logo-sobre {
+        width: 150px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .texto-sobre {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .container-historico {
+        height: 450px;
+    }
+
+    .imgs-historico {
+        height: 380px;
+    }
+
+    .data-historico {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .container-historico p {
+        font-size: 9px;
+    }
+
+    .texto-container-1 {
+        width: 140px;
+        top: -375px;
+        left: 190px;
+    }
+
+    .texto-container-2 {
+        width: 100px;
+        top: -337px;
+        left: 60px;
+    }
+
+    .texto-container-3 {
+        width: 100px;
+        top: -288px;
+        left: 190px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: unset;
+        padding-bottom: 20px;
+    }
+
+    .card-footer-logo {
+        order: 3;
+        width: unset;
+        padding-top: 60px;
+    }
+
+    .card-footer-sobre {
+        width: unset;
+        padding-top: 20px;
+    }
+
+    .card-footer-contato {
+        width: unset;
+        padding-top: 60px;
+    }
 }
 
-/* telas maiores */
-@media (min-width: 2000px) {
+@media (min-width: 451px) and (max-width: 999px) {
+    .textos-header {
+        width: 250px;
+    }
 
+    .titulo-header,
+    .titulo-azul {
+        font-size: 17px;
+    }
+
+    .titulo-header::before {
+        width: 90px;
+        height: 7px;
+        left: 118px;
+        top: 22px;
+    }
+
+    .descricao-header {
+        font-size: 13px;
+    }
+
+    .btn-header {
+        width: 150px;
+        height: 24px;
+        font-size: smaller;
+        margin-bottom: 24px;
+    }
+
+    .imgs-top {
+        width: 200px;
+        height: 200px;
+    }
+
+    .computador-top,
+    .planeta-top,
+    .alavancas,
+    .luzes {
+        width: 200px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .logo-navbar {
+        max-height: 140px;
+    }
+
+    .navbar-list-item {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 50px;
+        font-size: 2em;
+    }
+
+    .textos-header {
+        width: 1000px;
+    }
+
+    .titulo-header,
+    .titulo-azul {
+        font-size: 4em;
+    }
+
+    .titulo-header::before {
+        width: 300px;
+        height: 28px;
+        left: 396px;
+        top: 80px;
+    }
+
+    .descricao-header,
+    .texto-contato,
+    .titulo-equipe,
+    .nome-equipe,
+    .texto-sobre,
+    .container-historico p,
+    .titulos-footer,
+    .footer-list-item,
+    .item-contato {
+        font-size: 2em;
+    }
+
+    .btn-header {
+        width: 300px;
+        height: 80px;
+        font-size: xx-large;
+    }
+
+    .titulo-servicos::before {
+        width: 546px;
+        height: 26px;
+        top: 63px;
+    }
+
+    .card {
+        width: 600px;
+        height: 670px;
+    }
+
+    .titulo-card {
+        font-size: 2em;
+        height: 70px;
+    }
+
+    #equipe {
+        height: 1900px;
+    }
+
+    .container-equipe {
+        grid-row-gap: 80px;
+    }
+
+    .div-foto {
+        width: 310px;
+        height: 345px;
+    }
+
+    .foto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .foto img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .redes-sociais {
+        width: 34px;
+    }
+
+    .container-sobre {
+        width: 1000px;
+    }
+
+    .titulo-sobre,
+    .titulo-servicos,
+    .titulo-projetos,
+    .titulo-historico {
+        font-size: 3em;
+    }
+
+    .titulo-projetos::before {
+        width: 257px;
+        height: 26px;
+        top: 63px;
+    }
+
+    .projeto {
+        width: 550px;
+        height: 500px;
+    }
+
+    .titulo-sobre::before {
+        width: 290px;
+        height: 26px;
+        top: 63px;
+    }
+
+    .container-historico {
+        height: 1500px;
+    }
+
+    .imgs-historico {
+        height: 1300px;
+    }
+
+    .data-historico {
+        font-size: 3em;
+        white-space: nowrap;
+    }
+
+    .texto-container-1 {
+        width: 500px;
+        top: -1260px;
+        left: 670px;
+    }
+
+    .texto-container-2 {
+        width: 500px;
+        top: -1100px;
+        left: 180px;
+    }
+
+    .texto-container-3 {
+        width: 500px;
+        top: -880px;
+        left: 670px;
+    }
+
+    .footer {
+        padding-bottom: 150px;
+    }
+
+    .card-footer-logo img {
+        max-height: 150px;
+    }
+
+    .texto-copyright {
+        font-size: 2em;
+        white-space: nowrap;
+    }
+
+    .footer .redes-sociais {
+        width: 50px;
+    }
+
+    .card-footer-logo,
+    .card-footer-sobre,
+    .card-footer-contato {
+        width: 400px;
+    }
+
+    .card-footer-contato {
+        margin-top: 130px;
+    }
 }
