@@ -877,7 +877,11 @@ body {
         justify-content: space-between;
         align-items: center;
         height: unset;
+<<<<<<< HEAD
         padding-bottom: 19px;
+=======
+        padding-bottom: 20px;
+>>>>>>> df41d011157d55084c4d8edd778e4fe669f31913
     }
 
     .card-footer-logo {
