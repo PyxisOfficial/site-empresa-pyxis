@@ -594,7 +594,6 @@ body {
 .imgs-historico {
     width: 1300px;
     pointer-events: none;
-    position: absolute;
 }
 
 .imgs-historico-mobile {
@@ -608,21 +607,21 @@ body {
 
 .texto-container-1 {
     width: 400px;
-    position: absolute;
+    position: relative;
     top: -90%;
     left: 35%;
 }
 
 .texto-container-2 {
     width: 400px;
-    position: absolute;
+    position: relative;
     top: -70%;
     left: 35%;
 }
 
 .texto-container-3 {
     width: 400px;
-    position: absolute;
+    position: relative;
     top: -40%;
     left: 35%;
 }
@@ -917,18 +916,21 @@ body {
     }
 
     .texto-container-1 {
+        position: absolute;
         width: 200px;
         top: 10px;
         margin-left: 15px;
     }
 
     .texto-container-2 {
+        position: absolute;
         width: 200px;
         top: 190px;
         margin-left: 15px;
     }
 
     .texto-container-3 {
+        position: absolute;
         width: 200px;
         top: 380px;
         margin-left: 15px;
