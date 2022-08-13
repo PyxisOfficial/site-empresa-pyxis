@@ -559,6 +559,10 @@ body {
     margin-right: 80px;
 }
 
+#logo-sobre-mobile {
+    display: none;
+}
+
 .texto-sobre {
     padding-top: 40px;
     text-align: justify;
@@ -578,7 +582,8 @@ body {
 }
 
 .container-historico {
-    height: 900px;
+    position: relative;
+    height: 140vh;
 }
 
 .titulo-historico {
@@ -587,8 +592,13 @@ body {
 }
 
 .imgs-historico {
+    width: 1300px;
     pointer-events: none;
-    position: relative;
+    position: absolute;
+}
+
+.imgs-historico-mobile {
+    display: none;
 }
 
 .data-historico {
@@ -597,30 +607,30 @@ body {
 }
 
 .texto-container-1 {
-    width: 300px;
-    position: relative;
-    top: -760px;
-    left: 420px;
+    width: 400px;
+    position: absolute;
+    top: -90%;
+    left: 35%;
 }
 
 .texto-container-2 {
-    width: 300px;
-    position: relative;
-    top: -610px;
-    left: 100px;
+    width: 400px;
+    position: absolute;
+    top: -70%;
+    left: 35%;
 }
 
 .texto-container-3 {
-    width: 300px;
-    position: relative;
-    top: -430px;
-    left: 430px;
+    width: 400px;
+    position: absolute;
+    top: -40%;
+    left: 35%;
 }
 
 .footer {
     display: flex;
     justify-content: space-evenly;
-    height: 32vh;
+    height: 22vh;
     background-color: #000123;
     padding-bottom: 60px;
 }
@@ -708,6 +718,7 @@ body {
 
 @media (max-width: 450px) {
     .content-header {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -752,12 +763,21 @@ body {
         width: 200px;
     }
 
+    .main {
+        padding-top: 50px;
+    }
+
     .card {
         width: 230px;
         height: 270px;
     }
 
+    .container-cards {
+        margin-top: 30px;
+    }
+
     #equipe {
+        margin-top: 20px;
         height: 3100px;
     }
 
@@ -797,6 +817,10 @@ body {
         font-size: 13px;
     }
 
+    .container-projetos {
+        margin-top: 20px;
+    }
+
     .titulo-projetos::before {
         width: 96px;
         height: 8px;
@@ -806,6 +830,18 @@ body {
     .projeto {
         width: 250px;
         height: 200px;
+    }
+
+    #projeto1 {
+        display: none;
+    }
+
+    #projeto2 {
+        background: #e0e0e0;
+    }
+
+    #projeto3 {
+        display: none;
     }
 
     .em-breve {
@@ -818,6 +854,7 @@ body {
         flex-direction: column;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 30px;
     }
 
     .titulo-sobre::before {
@@ -827,49 +864,74 @@ body {
     }
 
     .logo-sobre {
+        display: none;
+    }
+
+    #logo-sobre-mobile {
+        display: block;
         width: 150px;
-        margin-right: 0;
-        margin-bottom: 16px;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
     .texto-sobre {
-        width: 250px;
+        padding-top: 10px;
+        width: 300px;
         font-size: 13px;
     }
 
+    #historico {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: space-evenly;
+        align-items: initial;
+        margin-top: 50px;
+    }
+
+    .titulo-projetos {
+        margin-bottom: 0;
+    }
+
     .container-historico {
-        height: 450px;
+        height: 520px;
     }
 
     .imgs-historico {
-        height: 380px;
+        display: none;
+    }
+
+    .imgs-historico-mobile {
+        display: inline;
+        width: 130px;
     }
 
     .data-historico {
+        margin-bottom: 5px;
         font-size: 12px;
         white-space: nowrap;
     }
 
     .container-historico p {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .texto-container-1 {
-        width: 140px;
-        top: -375px;
-        left: 190px;
+        width: 200px;
+        top: 10px;
+        margin-left: 15px;
     }
 
     .texto-container-2 {
-        width: 100px;
-        top: -337px;
-        left: 60px;
+        width: 200px;
+        top: 190px;
+        margin-left: 15px;
     }
 
     .texto-container-3 {
-        width: 100px;
-        top: -288px;
-        left: 190px;
+        width: 200px;
+        top: 380px;
+        margin-left: 15px;
     }
 
     .footer {
@@ -891,6 +953,14 @@ body {
         padding-top: 20px;
     }
 
+    .card-footer-contato h5 {
+        text-align: center;
+    }
+
+    .footer-list-contato  {
+        text-align: center;
+    }
+
     .card-footer-contato {
         width: unset;
         padding-top: 60px;
@@ -898,6 +968,7 @@ body {
 }
 
 @media (min-width: 451px) and (max-width: 999px) {
+
     .textos-header {
         width: 250px;
     }
