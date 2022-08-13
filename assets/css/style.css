@@ -746,7 +746,56 @@ body {
     color: #fff;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 999px) {
+    html {
+        scroll-padding-top: 260px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 100vw;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #000017;
+        transform: translateX(100%);
+        transition: transform .3s ease-in;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .navbar-list.active {
+        transform: translateX(0);
+    }
+
+    .navbar-list-branco {
+        background-color: rgba(255, 255, 255, 0.75);
+        transition: all .5s ease-in-out;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .navbar-list-item {
+        margin-right: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
     .content-header {
         width: 100%;
         display: flex;
@@ -997,99 +1046,6 @@ body {
     .card-footer-contato {
         width: unset;
         padding-top: 60px;
-    }
-}
-
-@media (min-width: 451px) and (max-width: 999px) {
-
-    .textos-header {
-        width: 250px;
-    }
-
-    .titulo-header,
-    .titulo-azul {
-        font-size: 17px;
-    }
-
-    .titulo-header::before {
-        width: 90px;
-        height: 7px;
-        left: 118px;
-        top: 22px;
-    }
-
-    .descricao-header {
-        font-size: 13px;
-    }
-
-    .btn-header {
-        width: 150px;
-        height: 24px;
-        font-size: smaller;
-        margin-bottom: 24px;
-    }
-
-    .imgs-top {
-        width: 200px;
-        height: 200px;
-    }
-
-    .computador-top,
-    .planeta-top,
-    .alavancas,
-    .luzes {
-        width: 200px;
-    }
-}
-
-@media (max-width: 999px) {
-    html {
-        scroll-padding-top: 260px;
-    }
-
-    .navbar-list {
-        position: absolute;
-        top: 12vh;
-        right: 0;
-        width: 100vw;
-        height: 30vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #000017;
-        transform: translateX(100%);
-        transition: transform .3s ease-in;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .navbar-list.active {
-        transform: translateX(0);
-    }
-
-    .navbar-list-branco {
-        background-color: rgba(255, 255, 255, 0.75);
-        transition: all .5s ease-in-out;
-    }
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px)
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .navbar-list-item {
-        margin-right: 0;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
     }
 }
 
