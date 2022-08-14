@@ -11,9 +11,9 @@
 
 <body>
     <header id="home">
-        <!-- <div class="container-estrelas">
+        <div class="container-estrelas">
             <img src="assets/img/backgrounds/estrelas.png" class="estrelas estrelas_animation">
-        </div> -->
+        </div>
         <nav id="navbar" class="navbar select-disable">
             <a href="#home"><img src="assets/img/logo-branca.png" alt="Logo PYXIS" id="logo" class="logo-navbar"></a>
             <div class="mobile-menu">
@@ -25,7 +25,7 @@
                 <li class="navbar-list-item"><a href="#servicos" class="navbar-links bottom_animation">Serviços</a></li>
                 <li class="navbar-list-item"><a href="#projetos" class="navbar-links bottom_animation">Projetos</a></li>
                 <li class="navbar-list-item"><a href="#sobre" class="navbar-links bottom_animation">Sobre Nós</a></li>
-                <li class="navbar-list-item"><a href="#contato" class="navbar-links bottom_animation">Contato</a></li>
+                <li class="navbar-list-item"><a href="#" class="navbar-links bottom_animation">Contato</a></li>
             </ul>
         </nav>
 
@@ -53,15 +53,15 @@
     <main class="main">
 
         <section id="servicos">
-            <h2 class="titulo-servicos">Serviços oferecidos</h2>
+            <h2 class="titulo-servicos" data-anime="left">Serviços oferecidos</h2>
             <div class="container-cards">
-                <div class="card">
+                <div class="card" data-anime="top">
                     <h3 class="titulo-card">Design</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-anime="top">
                     <h3 class="titulo-card">Design</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-anime="top">
                     <h3 class="titulo-card">Design</h3>
                 </div>
             </div>
@@ -70,10 +70,10 @@
         <section id="equipe">
             <div class="container-equipe">
                 <div class="titulo-equipe">
-                    <h2 class="texto-branco">Nossa equipe</h2>
+                    <h2 class="texto-branco" data-anime="top">Nossa equipe</h2>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/gab.jpg" alt="Foto Gabriel"></div>
                     <h4 class="texto-branco nome-equipe">Gabriel Vinicius</h4>
                     <h4 class="funcao-equipe texto-branco">Front-end</h4>
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/igor.jpg" alt="Foto Igor"></div>
                     <h4 class="texto-branco nome-equipe">Igor Ferreira</h4>
                     <h4 class="funcao-equipe texto-branco">Back-end</h4>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/julia.jpg" alt="Foto Julia"></div>
                     <h4 class="texto-branco nome-equipe">Julia Rufino</h4>
                     <h4 class="funcao-equipe texto-branco">...</h4>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/kau.jpg" alt="Foto Kauanny"></div>
                     <h4 class="texto-branco nome-equipe">Kauanny Tenorio</h4>
                     <h4 class="funcao-equipe texto-branco">...</h4>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/leo.jpg" alt="Foto Leonardo"></div>
                     <h4 class="texto-branco nome-equipe">Leonardo Santos</h4>
                     <h4 class="funcao-equipe texto-branco">Front-end</h4>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/luigi.jpg" alt="Foto Luigi"></div>
                     <h4 class="texto-branco nome-equipe">Luigi Vicchietti</h4>
                     <h4 class="funcao-equipe texto-branco">...</h4>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/pablo.jpg" alt="Foto Pablo"></div>
                     <h4 class="texto-branco nome-equipe">Pablo Vinicius</h4>
                     <h4 class="funcao-equipe texto-branco">DBA</h4>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/well.jpg" alt="Foto Wellington"></div>
                     <h4 class="texto-branco nome-equipe">Wellington Augusto</h4>
                     <h4 class="funcao-equipe texto-branco">Back-end</h4>
@@ -183,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto">
+                <div class="div-foto" data-anime="top">
                     <div class="foto select-disable"><img src="assets/img/fotos/yuri.jpg" alt="Foto Yuri"></div>
                     <h4 class="texto-branco nome-equipe">Yuri Oliveira</h4>
                     <h4 class="funcao-equipe texto-branco">Designer UX/UI e Front-end</h4>
@@ -200,27 +200,26 @@
         </section>
 
         <section id="projetos">
-            <h2 class="titulo-projetos">Projetos</h2>
+            <h2 class="titulo-projetos" data-anime="left">Projetos</h2>
             <div class="container-projetos">
-                <div class="projeto" id="projeto1">
+                <div class="projeto" id="projeto1" data-anime="top">
                     <span class="em-breve">Em breve</span>
                 </div>
-                <div class="projeto" id="projeto2">
+                <div class="projeto" id="projeto2" data-anime="top">
 
                 </div>
-                <div class="projeto" id="projeto3">
+                <div class="projeto" id="projeto3" data-anime="top">
                     <span class="em-breve">Em breve</span>
                 </div>
             </div>
         </section>
 
         <section id="sobre">
-            <img src="assets/img/logo-pyxis.png" alt="Logo PYXIS" class="logo-sobre select-disable">
             <div class="container-sobre">
-                <h2 class="titulo-sobre">Sobre Nós</h2>
-                <img src="assets/img/logo-pyxis.png" alt="Logo PYXIS" class="logo-sobre select-disable"
-                    id="logo-sobre-mobile">
-                <p class="texto-sobre">
+                <h2 class="titulo-sobre" data-anime="top">Sobre Nós</h2>
+                <img src="assets/img/logo-pyxis.png" alt="Logo PYXIS"
+                    class="logo-sobre logo-sobre-mobile select-disable" data-anime="top">
+                <p class="texto-sobre" data-anime="top">
                     A Pyxis é uma empresa de desenvolvimento de softwares, que possui como principal missão a resolução
                     de problemas por meio da tecnologia.
                     A empresa Pyxis foi fundada em 04/03/2022 por Gabriel Vinícius Matos Dantas, Igor Ferreira Gazuza de
@@ -233,8 +232,8 @@
         </section>
 
         <section id="historico">
-            <h2 class="titulo-historico">Linha do tempo</h2>
-            <div class="container-historico">
+            <h2 class="titulo-historico" data-anime="top">Linha do tempo</h2>
+            <div class="container-historico" data-anime="left">
                 <img src="assets/img/backgrounds/historico.png" class="imgs-historico select-disable">
                 <img src="assets/img/backgrounds/historico-mobile.png" class="imgs-historico-mobile select-disable">
 

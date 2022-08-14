@@ -30,6 +30,28 @@ body {
     overflow-x: hidden;
 }
 
+[data-anime] {
+    opacity: 0;
+    transition: .7s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -80px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(100px, 0, 0);
+}
+
 .select-disable {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -599,10 +621,6 @@ body {
     margin-right: 80px;
 }
 
-#logo-sobre-mobile {
-    display: none;
-}
-
 .texto-sobre {
     padding-top: 40px;
     text-align: justify;
@@ -905,7 +923,7 @@ body {
         display: none;
     }
 
-    #logo-sobre-mobile {
+    .logo-sobre-mobile {
         display: block;
         width: 150px;
         margin: 0;
@@ -1104,7 +1122,7 @@ body {
         display: none;
     }
 
-    #logo-sobre-mobile {
+    .logo-sobre-mobile {
         display: block;
         width: 350px;
         margin: 10px 0 0 0;
@@ -1245,7 +1263,7 @@ body {
         display: none;
     }
 
-    #logo-sobre-mobile {
+    .logo-sobre-mobile {
         margin: 10px 0 0 0;
         display: block;
     }

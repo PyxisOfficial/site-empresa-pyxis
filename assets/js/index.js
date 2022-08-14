@@ -1,26 +1,38 @@
 const navbar = document.getElementById("navbar"),
     logo = document.getElementById("logo"),
-    linhasMenu = document.querySelectorAll(".line"),
+    linesMenu = document.querySelectorAll(".line"),
     navbarList = document.querySelector(".navbar-list"),
-    links = document.querySelectorAll(".navbar-links");
+    links = document.querySelectorAll(".navbar-links"),
+    target = document.querySelectorAll("[data-anime]"),
+    animationClass = "animate";
 
 const activeScroll = () => {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+
     navbar.classList.toggle("navbar-ativo", scrollY > 0);
     navbarList.classList.toggle("navbar-list-branco", scrollY > 0)
-
-    links.forEach((link) => {
-        link.classList.toggle("navbar-links-ativo", scrollY > 0);
-    })
-
-    linhasMenu.forEach((line) => {
-        line.classList.toggle("line-ativo", scrollY > 0);
-    })
 
     if (scrollY === 0) {
         logo.setAttribute("src", "assets/img/logo-branca.png");
     } else {
         logo.setAttribute("src", "assets/img/logo.png");
     }
+
+    links.forEach((e) => {
+        e.classList.toggle("navbar-links-ativo", scrollY > 0);
+    })
+
+    linesMenu.forEach((e) => {
+        e.classList.toggle("line-ativo", scrollY > 0);
+    })
+
+    target.forEach((e) => {
+        if (windowTop > e.offsetTop) {
+            e.classList.add(animationClass);
+        } else {
+            e.classList.remove(animationClass);
+        }
+    })
 }
 window.addEventListener("scroll", activeScroll);
 
