@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 13vh;
 }
 
 body::-webkit-scrollbar {
@@ -95,7 +95,7 @@ body {
 }
 
 .navbar-ativo {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.860);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -274,11 +274,18 @@ body {
 }
 
 .imgs-top {
+    position: relative;
     width: 425px;
     height: 425px;
     max-width: 425px;
     max-height: 425px;
     pointer-events: none;
+}
+
+.bloco-header {
+    position: absolute;
+    top: -50%;
+    left: 20%;
 }
 
 .computador-top,
@@ -556,7 +563,7 @@ body {
     margin-bottom: 50px;
     width: 350px;
     height: 300px;
-    background-color: #fff;
+    background-color: rgb(240, 240, 240);
     border-radius: 14px;
     box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -589,7 +596,7 @@ body {
     font-size: 3em;
     font-weight: 500;
     text-transform: uppercase;
-    color: #cacaca;
+    color: #919191;
 }
 
 #sobre {
@@ -615,9 +622,13 @@ body {
 
 .container-sobre {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container-texto-sobre {
+    width: 800px;
+    margin-left: 120px;
 }
 
 .logo-sobre {
@@ -816,6 +827,10 @@ body {
         height: 200px;
     }
 
+    .bloco-header {
+        display: none;
+    }
+
     .computador-top,
     .planeta-top,
     .alavancas,
@@ -923,16 +938,20 @@ body {
         top: 20px;
     }
 
-    .logo-sobre {
-        display: none;
+    .container-sobre {
+        flex-direction: column;
     }
 
-    .logo-sobre-mobile {
+    .container-texto-sobre {
+        all: unset;
+    }
+
+    .logo-sobre {
         display: block;
-        width: 150px;
+        width: 170px;
         margin: 0;
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .texto-sobre {
@@ -1041,6 +1060,10 @@ body {
         height: 250px;
     }
 
+    .bloco-header {
+        top: -85%;
+    }
+
     .computador-top,
     .planeta-top,
     .alavancas,
@@ -1122,14 +1145,20 @@ body {
         align-items: center;
     }
 
-    .logo-sobre {
-        display: none;
+    .container-sobre {
+        flex-direction: column;
     }
 
-    .logo-sobre-mobile {
+    .container-texto-sobre {
+        all: unset;
+    }
+
+    .logo-sobre {
         display: block;
-        width: 350px;
-        margin: 10px 0 0 0;
+        width: 220px;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
 
     .texto-sobre {
@@ -1263,19 +1292,11 @@ body {
 }
 
 @media (min-width: 1000px) {
-    .logo-sobre {
-        display: none;
-    }
 
-    .logo-sobre-mobile {
-        margin: 10px 0 0 0;
-        display: block;
+    .container-texto-sobre {
+        width: 500px;
+        margin-left: 0;
     }
-
-    .texto-sobre {
-        width: 850px;
-    }
-
     .container-historico {
         height: 1000px;
     }
@@ -1415,6 +1436,10 @@ body {
         width: 290px;
         height: 26px;
         top: 63px;
+    }
+
+    .texto-sobre {
+        width: 1000px;
     }
 
     #historico {
