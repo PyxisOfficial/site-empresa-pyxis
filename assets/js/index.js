@@ -33,6 +33,13 @@ const activeScroll = () => {
             e.classList.remove(animationClass);
         }
     })
+
+    if (window.matchMedia("(max-width: 999px)").matches) {
+        target.forEach((e) => {
+            e.removeAttribute('data-anime');
+
+        })
+    }
 }
 window.addEventListener("scroll", activeScroll);
 
@@ -66,3 +73,4 @@ class MobileNavbar {
 
 const mobileNavbar = new MobileNavbar(".mobile-menu", ".navbar-list", ".navbar-list-item",);
 mobileNavbar.addClickEvent();
+

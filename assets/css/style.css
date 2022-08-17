@@ -34,11 +34,13 @@ body {
 [data-anime] {
     opacity: 0;
     transition: .7s;
+    z-index: -1;
 }
 
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+    z-index: 1;
 }
 
 [data-anime="top"] {
@@ -77,6 +79,7 @@ body {
     padding-top: 22px;
     background-position: 24% 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .content-header {
@@ -142,20 +145,21 @@ body {
 
 .container-estrelas {
     width: 100%;
+    height: 10vh;
     overflow: hidden !important;
 }
 
 .estrelas {
     position: absolute;
-    top: 20;
+    top: 0;
     left: 0;
     pointer-events: none;
-    height: 100vh;
+    width: 100%;
 }
 
 .estrelas_animation {
     animation-name: estrelas_animation;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     pointer-events: none;
@@ -167,13 +171,13 @@ body {
     }
 
     50% {
-        transform: translate(-1920px, 0);
+        transform: translate(0, -550px);
     }
 
     100% {
-        transform: translate(-3840px, 0);
+        transform: translate(0, -1100px);
     }
-}
+} 
 
 .navbar-list {
     list-style: none;
@@ -256,7 +260,7 @@ body {
     background-color: #266ef3;
     color: #fff;
     border: none;
-    width: 190px;
+    width: 220px;
     height: 42px;
     border-radius: 50px;
     margin-top: 24px;
@@ -265,7 +269,8 @@ body {
     box-shadow: 0px 0px 15px -1px #2873FF;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 15px;
+    letter-spacing: 1px;
     transition: all .4s ease-in-out;
 }
 
@@ -794,7 +799,7 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
-    transition: border .3s ease-in-out, outline .3s ease-in-out, background .2s ease-in-out;
+    transition: border .3s linear, outline .3s ease-in-out, background .2s linear;
 }
 
 #nome-user:focus, 
@@ -807,7 +812,10 @@ body {
 }
 
 #msg-user {
+    display: flex;
+    text-align: flex-start;
     height: 200px;
+    resize: unset;
 }
 
 .btn-contato {
@@ -922,6 +930,19 @@ body {
 }
 
 @media (max-width: 499px) {
+    @keyframes estrelas_animation {
+        0% {
+            transform: translate(0%, 0);
+        }
+    
+        50% {
+            transform: translate(0, -100px);
+        }
+    
+        100% {
+            transform: translate(0, -200px);
+        }
+    } 
 
     #home {
         height: 500px;
