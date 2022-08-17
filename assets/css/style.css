@@ -775,7 +775,7 @@ body {
 
 }
 
-#form-contato {
+#formContato {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -783,17 +783,16 @@ body {
     height: 445px;
 }
 
-#nome-user, 
-#email-user,
-#assunto-user,
-#msg-user {
+#nomeUser, 
+#emailUser,
+#assuntoUser,
+#msgUser {
     display: block;
     width: 500px;
     height: 40px;
     border-radius: 15px;
     font-size: 16px;
     padding: 15px;
-    margin-bottom: 30px;
     border: none;
     background: #D9D9D9;
     font-weight: 700;
@@ -802,20 +801,36 @@ body {
     transition: border .3s linear, outline .3s ease-in-out, background .2s linear;
 }
 
-#nome-user:focus, 
-#email-user:focus,
-#assunto-user:focus,
-#msg-user:focus {
+#nomeUser:focus, 
+#emailUser:focus,
+#assuntoUser:focus,
+#msgUser:focus {
     border: 1px solid #313131;
     outline: 2px solid #4787fd8e;
     background: #c0c0c0;
 }
 
-#msg-user {
+#msgUser {
     display: flex;
     text-align: flex-start;
     height: 200px;
     resize: unset;
+}
+
+.input-error {
+    outline: 2px solid #e94a4f;
+}
+
+.error-text {
+    margin: 8px 0 8px 0;
+    opacity: 0;
+    color: #0b0b35;
+    transition: .7s;
+}
+
+.error-text.active {
+    opacity: 1;
+    color: #e94a4f;
 }
 
 .btn-contato {
@@ -824,6 +839,7 @@ body {
     border: none;
     width: 150px;
     height: 40px;
+    margin-top: 30px;
     border-radius: 50px;
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 15px -1px #2873FF;

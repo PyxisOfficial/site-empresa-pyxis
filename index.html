@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo-pyxis.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
     <title>PYXIS - Em direção ao futuro</title>
 </head>
 
@@ -287,16 +288,21 @@
                 </div>
                 <div class="container-form">
                     <h2 class="titulo-contato-branco">Preencha seus dados e nos <br> envie uma mensagem</h2>
-                    <form action="" id="form-contato">
-                        <input type="text" id="nome-user" placeholder="Seu nome">
+                    <form method="post" action="contato.php" id="formContato">
+                        <p class="error-text">Por favor, insira seu nome.</p>
+                        <input name="nomeUser" type="text" id="nomeUser" placeholder="Seu nome" maxlength="100">
 
-                        <input type="email" id="email-user" placeholder="Seu email">
+                        <p class="error-text">Endereço de e-mail inválido!</p>
+                        <input name="emailUser" type="email" id="emailUser" placeholder="Seu email" maxlength="100">
 
-                        <input type="text" id="assunto-user" placeholder="Assunto">
+                        <p class="error-text">Por favor, insira um assunto.</p>
+                        <input name="assuntoUser" type="text" id="assuntoUser" placeholder="Assunto" maxlength="50">
 
-                        <textarea name="" id="msg-user" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                        <p class="error-text">Por favor, insira uma mensagem.</p>
+                        <textarea name="msgUser" id="msgUser" cols="30" rows="10" placeholder="Sua mensagem"
+                            maxlength="250"></textarea>
 
-                        <button class="btn-contato">Enviar</button>
+                        <input type="button" id="btnSubmit" class="btn-contato" value="Enviar">
                     </form>
                 </div>
             </div>
