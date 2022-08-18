@@ -55,13 +55,6 @@ const ativarScroll = () => {
         logo.setAttribute("src", "assets/img/logo.png");
     }
 
-    if (window.matchMedia("(max-width: 999px)").matches) {
-        target.forEach((e) => {
-            e.removeAttribute("data-anime");
-            bgEstrelas.classList.remove("estrelas_animation");
-        })
-    }
-
     links.forEach((e) => {
         e.classList.toggle("navbar-links-ativo", scrollY > 0);
     })
@@ -149,6 +142,13 @@ const removerErro = () => {
         inputMsg.classList.remove("input-error");
         errorText[3].classList.remove("active");
     }
+}
+
+if (window.matchMedia("(max-width: 999px)").matches) {
+    target.forEach((e) => {
+        e.removeAttribute("data-anime");
+        bgEstrelas.classList.remove("estrelas_animation");
+    })
 }
 
 document.addEventListener("keypress", () => {
