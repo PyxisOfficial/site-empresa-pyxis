@@ -793,7 +793,7 @@ body {
     border-radius: 15px;
     font-size: 16px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: none;
     background: #D9D9D9;
     font-weight: 700;
@@ -1573,7 +1573,7 @@ body {
     #assuntoUser,
     #msgUser {
         height: 35px;
-        width: 300px;
+        width: 80%;
     }
 
     #msgUser {
