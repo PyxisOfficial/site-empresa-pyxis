@@ -1,4 +1,5 @@
-const navbar = document.getElementById("navbar"),
+const bgEstrelas = document.getElementById("estrelas"),
+    navbar = document.getElementById("navbar"),
     logo = document.getElementById("logo"),
     linesMenu = document.querySelectorAll(".line"),
     navbarList = document.querySelector(".navbar-list"),
@@ -56,8 +57,8 @@ const ativarScroll = () => {
 
     if (window.matchMedia("(max-width: 999px)").matches) {
         target.forEach((e) => {
-            e.removeAttribute('data-anime');
-            document.getElementById('estrelas').classList.remove('estrelas_animation')
+            e.removeAttribute("data-anime");
+            bgEstrelas.classList.remove("estrelas_animation");
         })
     }
 
