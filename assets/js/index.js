@@ -117,7 +117,6 @@ const validarCampos = () => {
     }
 
     if (valueNome !== "" && emailTest === true && valueAssunto !== "" && valueMsg !== "") {
-        alert("Mensagem enviada com sucesso!");
         form.submit();
     }
 }
