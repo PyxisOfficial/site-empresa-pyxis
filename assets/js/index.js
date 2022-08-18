@@ -57,6 +57,7 @@ const ativarScroll = () => {
     if (window.matchMedia("(max-width: 999px)").matches) {
         target.forEach((e) => {
             e.removeAttribute('data-anime');
+            document.getElementById('estrelas').classList.remove('estrelas_animation')
         })
     }
 

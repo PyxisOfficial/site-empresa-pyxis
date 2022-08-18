@@ -452,9 +452,9 @@ body {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 14px;
     background-color: #fff;
-    -webkit-box-shadow: 10px 12px 1px #161650;
-    -moz-box-shadow: 10px 12px 1px #161650;
-    box-shadow: 10px 12px 1px #161650;
+    -webkit-box-shadow: 15px 17px 1px #161650;
+    -moz-box-shadow: 15px 17px 1px #161650;
+    box-shadow: 15px 17px 1px #161650;
     flex-shrink: 0;
 }
 
@@ -617,27 +617,24 @@ body {
     z-index: -1;
 }
 
+.titulo-sobre {
+    margin-bottom: 50px;
+}
+
 .container-sobre {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-texto-sobre {
-    width: 800px;
-    margin-left: 120px;
-}
-
 .logo-sobre {
     width: 400px;
-    margin-right: 150px;
 }
 
-.texto-sobre {
-    width: 700px;
-    padding-top: 40px;
+.container-texto-sobre {
     text-align: justify;
-    font-size: large;
+    width: 50%;
+    margin-left: 120px;
 }
 
 #historico {
@@ -651,7 +648,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 1200px;
+    height: 1400px;
 }
 
 .container-historico {
@@ -665,7 +662,7 @@ body {
 }
 
 .imgs-historico {
-    width: 1300px;
+    width: 1200px;
     pointer-events: none;
 }
 
@@ -681,22 +678,22 @@ body {
 .texto-container-1 {
     width: 400px;
     position: relative;
-    top: -86%;
-    left: 40%;
+    top: -94%;
+    left: 35%;
 }
 
 .texto-container-2 {
     width: 400px;
     position: relative;
-    top: -66%;
-    left: 30%;
+    left: 25%;
+    top: -74%;
 }
 
 .texto-container-3 {
     width: 400px;
     position: relative;
-    top: -40%;
-    left: 40%;
+    top: -50%;
+    left: 35%;
 }
 
 #contato {
@@ -706,12 +703,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 850px;
+    height: 750px;
 }
 
 .container-contato {
-    width: 90%;
-    height: 850px;
+    position: relative;
+    width: 95%;
+    height: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -721,7 +719,8 @@ body {
 
 .container-img {
     display: flex;
-    position: relative;
+    position: absolute;
+    left: 0;
     width: 35%;
     height: 100%;
     align-items: center;
@@ -733,7 +732,7 @@ body {
 
 .container-img img {
     pointer-events: none;
-    width: 500px;
+    width: 80%;
 }
 
 .titulo-contato {
@@ -761,12 +760,13 @@ body {
 }
 
 .container-form {
-    position: relative;
+    position: absolute;
+    right: 0;
     display: flex;
-    width: 65%;
+    width: 60%;
     height: 100%;
     background: url('../img/backgrounds/fundo-contato.svg');
-    background-position: 100% 100%;
+    background-position: 0 100%;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -793,16 +793,17 @@ body {
     border-radius: 15px;
     font-size: 16px;
     padding: 15px;
+    margin-bottom: 30px;
     border: none;
     background: #D9D9D9;
     font-weight: 700;
     letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
-    transition: border .3s linear, outline .3s ease-in-out, background .2s linear;
+    transition: border .1s linear, outline .1s ease-in-out, background .2s linear;
 }
 
 #nomeUser:focus, 
-#emailUser:focus,
+#emaiUser:focus,
 #assuntoUser:focus,
 #msgUser:focus {
     border: 1px solid #313131;
@@ -812,7 +813,6 @@ body {
 
 #msgUser {
     display: flex;
-    text-align: flex-start;
     height: 200px;
     resize: unset;
 }
@@ -822,7 +822,6 @@ body {
 }
 
 .error-text {
-    margin: 8px 0 8px 0;
     opacity: 0;
     color: #0b0b35;
     transition: .7s;
@@ -833,13 +832,14 @@ body {
     color: #e94a4f;
 }
 
+
 .btn-contato {
+    display: block;
     background-color: #266ef3;
     color: #fff;
     border: none;
     width: 150px;
     height: 40px;
-    margin-top: 30px;
     border-radius: 50px;
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 15px -1px #2873FF;
@@ -996,7 +996,7 @@ body {
 
     .btn-header {
         width: 150px;
-        height: 24px;
+        height: 40px;
         font-size: smaller;
         margin-bottom: 24px;
     }
@@ -1126,8 +1126,9 @@ body {
 
     .texto-sobre {
         padding-top: 10px;
-        width: 300px;
+        width: 250px;
         font-size: 13px;
+        text-align: justify;
     }
 
     #historico {
@@ -1136,6 +1137,10 @@ body {
         justify-content: space-evenly;
         align-items: initial;
         margin-top: 50px;
+        height: 700px;
+        background-image: url("../img/backgrounds/fundo-historico-mobile.svg");
+        background-position: center;
+        background-size: cover;
     }
 
     .titulo-projetos {
@@ -1186,6 +1191,40 @@ body {
         left: 130px;
     }
 
+    #contato {
+        height: 700px;
+        margin-bottom: 0;
+    }
+
+    .container-contato {
+        height: 700px;
+        width: 100%;
+    }
+
+    .container-img {
+        display: none;
+    }
+
+    .container-form {
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-position: 100%;
+    }
+
+    #nomeUser, 
+    #emailUser,
+    #assuntoUser,
+    #msgUser {
+        width: 80%;
+    }
+
+    .titulo-contato-branco {
+        font-size: 16px;
+        top: 5%;
+    }
+
     .footer {
         flex-direction: column;
         justify-content: space-between;
@@ -1220,6 +1259,10 @@ body {
 }
 
 @media (min-width: 325px)  and (max-width: 999px) {
+    .texto-sobre {
+        width: 300px;
+    }
+
     .projeto {
         width: 350px;
     }
@@ -1459,6 +1502,13 @@ body {
         width: 650px;
     }
 
+    #historico {
+        padding-top: 100px;
+        height: 900px;
+        align-items: center;
+        justify-content: center;
+    }
+
     .container-historico {
         height: 800px;
     }
@@ -1489,6 +1539,45 @@ body {
     .texto-container-3 {
         top: -46%;
         left: 35%;
+    }
+
+    .container-contato {
+        width: 95%;
+        height: 650px;
+    }
+
+    .container-img {
+        width: 50%;
+    }
+
+    .container-img img {
+        width: 250px;
+    }
+
+    .container-form {
+        background: url("../img/backgrounds/fundo-contato-mobile.svg");
+        background-position: 0 -100%;
+        width: 50%;
+    }
+
+    .titulo-contato {
+        font-size: 15px;
+    }
+
+    .titulo-contato-branco {
+        font-size: 16px;
+    }
+
+    #nomeUser, 
+    #emailUser,
+    #assuntoUser,
+    #msgUser {
+        height: 35px;
+        width: 300px;
+    }
+
+    #msgUser {
+        height: 200px;
     }
 
     .footer {
@@ -1585,8 +1674,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
-
+@media (min-width: 1000px) and (max-width: 1439px){
     .container-texto-sobre {
         width: 500px;
         margin-left: 0;
@@ -1612,6 +1700,40 @@ body {
     .texto-container-3 {
         top: -55%;
         left: 35%;
+    }
+
+    #contato {
+        height: 700px;
+    }
+
+    .container-contato {
+        width: 95%;
+        height: 700px;
+    }
+
+    .container-img {
+        width: 45%;
+    }
+
+    .container-img img {
+        width: 300px;
+    }
+
+    .container-form {
+        width: 55%;
+        background-position: 100%;
+    }
+
+    #nomeUser, 
+    #emailUser,
+    #assuntoUser,
+    #msgUser {
+        width: 80%;
+    }
+
+    .titulo-contato,
+    .titulo-contato-branco {
+        font-size: 18px;
     }
 }
 
