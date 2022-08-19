@@ -589,7 +589,8 @@ body {
 
 .titulo-projetos,
 .titulo-sobre,
-.titulo-historico {
+.titulo-historico,
+.titulo-parcerias {
     color: #494949;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -694,6 +695,55 @@ body {
     position: relative;
     top: -50%;
     left: 35%;
+}
+
+#parcerias {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
+
+.titulo-parcerias {
+    margin-left: 90px;
+}
+
+.titulo-parcerias::before {
+    content: '';
+    display: block;
+    width: 295px;
+    height: 12px;
+    transform: skew(-20deg);
+    background-color: #DDDDFA;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: -1;
+}
+
+.container-parcerias {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parceria {
+    display: flex;
+    width: 450px;
+    height: 400px;
+    justify-items: center;
+    align-items: center;
+}
+
+.img-parceria {
+    width: 500px;
+    transition: transform .3s ease-in-out;
+}
+
+.img-parceria:hover {
+    transform: scale(1.1);
 }
 
 #contato {
@@ -1056,7 +1106,8 @@ body {
     .titulo-sobre,
     .titulo-servicos,
     .titulo-projetos,
-    .titulo-historico {
+    .titulo-historico, 
+    .titulo-parcerias {
         font-size: 1em;
     }
 
@@ -1191,6 +1242,24 @@ body {
         left: 130px;
     }
 
+    #parcerias {
+        height: 350px;
+    }
+
+    .titulo-parcerias {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-parcerias {
+        margin: 0;
+    }
+
+    .img-parceria {
+        width: 300px;
+    }
+
     #contato {
         height: 700px;
         margin-bottom: 0;
@@ -1277,6 +1346,10 @@ body {
 
     .texto-container-3 {
         left: 40%;
+    }
+
+    .img-parceria {
+        width: 350px;
     }
 }
 
@@ -1533,6 +1606,7 @@ body {
     }
 
     .texto-container-2 {
+        top: -66%;
         left: 10%;
     }
 
@@ -1578,6 +1652,10 @@ body {
 
     #msgUser {
         height: 200px;
+    }
+
+    .img-parceria {
+        width: 500px;
     }
 
     .footer {
