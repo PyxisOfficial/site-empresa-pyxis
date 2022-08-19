@@ -1252,6 +1252,12 @@ body {
         text-align: center;
     }
 
+    .titulo-parcerias::before {
+        width: 218px;
+        top: 12px;
+        left: 50px;
+    }
+
     .container-parcerias {
         margin: 0;
     }
@@ -1350,6 +1356,10 @@ body {
 
     .img-parceria {
         width: 350px;
+    }
+
+    .titulo-parcerias::before {
+        left: 23%;
     }
 }
 
