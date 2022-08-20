@@ -880,7 +880,7 @@ body {
 }
 
 #nomeUser:focus, 
-#emaiUser:focus,
+#emailUser:focus,
 #assuntoUser:focus,
 #msgUser:focus {
     border: 1px solid #313131;
