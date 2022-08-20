@@ -44,19 +44,19 @@ body {
 }
 
 [data-anime="top"] {
-    transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -100px, 0);
 }
 
 [data-anime="left"] {
-    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-100px, 0, 0);
 }
 
 [data-anime="right"] {
-    transform: translate3d(50px, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
 [data-anime="bottom"] {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 100px, 0);
 }
 
 .select-disable {
@@ -141,6 +141,32 @@ body {
 
 .mobile-menu.active .line-3 {
     transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.voltar-topo {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    right: 20px;
+    width: 180px;
+    height: 25px;
+    background: #4953807c;
+    text-decoration: none;
+    color: #5d6daa;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.voltar-topo-ativo {
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
 }
 
 .container-estrelas {
@@ -570,7 +596,7 @@ body {
 }
 
 .redes-sociais:hover {
-    transform: scale(1.3);
+    transform: scale(1.15);
 }
 
 .nome-equipe {
@@ -770,7 +796,7 @@ body {
 }
 
 .img-parceria:hover {
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 
 #contato {

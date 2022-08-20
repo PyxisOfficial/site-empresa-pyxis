@@ -1,4 +1,5 @@
-const bgEstrelas = document.getElementById("estrelas"),
+const voltarTopo = document.getElementsByClassName("voltar-topo")[0],
+    bgEstrelas = document.getElementById("estrelas"),
     navbar = document.getElementById("navbar"),
     logo = document.getElementById("logo"),
     linesMenu = document.querySelectorAll(".line"),
@@ -44,10 +45,11 @@ const mobileNavbar = new MobileNavbar(".mobile-menu", ".navbar-list", ".navbar-l
 mobileNavbar.addClickEvent();
 
 const ativarScroll = () => {
-    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+    const windowTop = window.pageYOffset + (window.innerHeight * 1);
 
-    navbar.classList.toggle("navbar-ativo", scrollY > 0);
+    navbar.classList.toggle("navbar-ativo", scrollY > 0)
     navbarList.classList.toggle("navbar-list-branco", scrollY > 0)
+    voltarTopo.classList.toggle("voltar-topo-ativo", scrollY > 0)
 
     if (scrollY === 0) {
         logo.setAttribute("src", "assets/img/logo-branca.png");
@@ -61,6 +63,7 @@ const ativarScroll = () => {
 
     linesMenu.forEach((e) => {
         e.classList.toggle("line-ativo", scrollY > 0);
+
     })
 
     target.forEach((e) => {
@@ -69,7 +72,7 @@ const ativarScroll = () => {
         } else {
             e.classList.remove("animate");
         }
-    })
+    })    
 }
 
 const validarCampos = () => {
