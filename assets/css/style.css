@@ -44,19 +44,19 @@ body {
 }
 
 [data-anime="top"] {
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -50px, 0);
 }
 
 [data-anime="left"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
 }
 
 [data-anime="right"] {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(50px, 0, 0);
 }
 
 [data-anime="bottom"] {
-    transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 50px, 0);
 }
 
 .select-disable {
@@ -74,7 +74,7 @@ body {
     justify-content: center;
     height: 97vh;
     background-image: url("../img/backgrounds/background.svg");
-    background-size: cover;
+    background-size: center;
     background-repeat: no-repeat;
     padding-top: 22px;
     background-position: 24% 100%;
@@ -238,12 +238,12 @@ body {
     content: '';
     display: block;
     width: 120px;
-    height: 12px;
-    transform: skew(-20deg);
+    height: 10px;
+    transform: skew(-55deg);
     background-color: #14319d;
     position: relative;
     left: 160px;
-    top: 33px;
+    top: 32px;
     z-index: -1;
 }
 
@@ -430,11 +430,11 @@ body {
     content: '';
     display: block;
     width: 270px;
-    height: 15px;
-    transform: skew(-20deg);
+    height: 10px;
+    transform: skew(-55deg);
     background: #DDDDFA;
     position: relative;
-    top: 35px;
+    top: 32px;
     z-index: -1;
 }
 
@@ -446,16 +446,18 @@ body {
 }
 
 .card {
-    width: 380px;
+    width: 350px;
     height: 450px;
     margin: 20px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 14px;
     background-color: #fff;
-    -webkit-box-shadow: 15px 17px 1px #161650;
-    -moz-box-shadow: 15px 17px 1px #161650;
-    box-shadow: 15px 17px 1px #161650;
+    -webkit-box-shadow: 13px 15px 1px #161650;
+    -moz-box-shadow: 13px 15px 1px #161650;
+    box-shadow: 13px 15px 1px #161650;
     flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .titulo-card {
@@ -471,6 +473,32 @@ body {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+}
+
+.conteudo-servicos {
+    padding: 22px;
+}
+
+.container-img-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    margin: 0 0 20px 0;
+}
+
+.img-servicos {
+    width: 80%;
+    display: flex;
+}
+
+.texto-servicos {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    color: #2c3b77;
+    justify-content: center;
 }
 
 
@@ -557,47 +585,6 @@ body {
     margin-bottom: 10px;
 }
 
-#projetos {
-    margin-top: 20px;
-}
-
-.container-projetos {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.projeto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    width: 90%;
-    height: 650px;
-    background-color: #bdbdbd;
-    border-radius: 14px;
-    box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.titulo-projetos {
-    width: 100%;
-    text-align: center;
-}
-
-.titulo-projetos,
-.titulo-sobre,
-.titulo-historico,
-.titulo-parcerias {
-    color: #494949;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: inline-block;
-    white-space: nowrap;
-}
-
 #sobre {
     display: flex;
     justify-content: center;
@@ -609,12 +596,12 @@ body {
 .titulo-sobre::before {
     content: '';
     display: block;
-    width: 152px;
-    height: 15px;
-    transform: skew(-20deg);
+    width: 155px;
+    height: 10px;
+    transform: skew(-55deg);
     background: #DDDDFA;
     position: relative;
-    top: 35px;
+    top: 32px;
     z-index: -1;
 }
 
@@ -636,6 +623,17 @@ body {
     text-align: justify;
     width: 50%;
     margin-left: 120px;
+}
+
+.titulo-projetos,
+.titulo-sobre,
+.titulo-historico,
+.titulo-parcerias {
+    color: #494949;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 #historico {
@@ -697,8 +695,37 @@ body {
     left: 35%;
 }
 
-#parcerias {
+#projetos {
     margin-top: 50px;
+}
+
+.container-projetos {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 32px -4px rgba(0,0,0,0.1);
+}
+
+.projeto-mobile {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0px 10px 32px -4px rgba(0,0,0,0.1);
+}
+
+.titulo-projetos {
+    width: 100%;
+    text-align: center;
+}
+
+#parcerias {
+    margin-top: 70px;
     width: 100%;
     height: 400px;
 }
@@ -711,12 +738,12 @@ body {
     content: '';
     display: block;
     width: 295px;
-    height: 12px;
-    transform: skew(-20deg);
+    height: 10px;
+    transform: skew(-55deg);
     background-color: #DDDDFA;
     position: absolute;
     left: 0px;
-    top: 20px;
+    top: 22px;
     z-index: -1;
 }
 
@@ -1072,7 +1099,19 @@ body {
 
     .card {
         width: 230px;
-        height: 270px;
+        height: 430px;
+    }
+
+    .container-img-servicos {
+        margin: 0 0 5px 0;
+    }
+
+    .texto-servicos {
+        font-size: 14px;
+    }
+
+    .conteudo-servicos {
+        padding: 10px;
     }
 
     .container-cards {
@@ -1136,8 +1175,16 @@ body {
     }
 
     .projeto {
-        width: 250px;
-        height: 200px;
+        display: none;
+    }
+
+    .container-projetos {
+        width: 100%;
+    }
+
+    .projeto-mobile {
+        width: 300px;
+        display: unset;
     }
 
     .em-breve {
@@ -1333,13 +1380,31 @@ body {
     }
 }
 
-@media (min-width: 325px)  and (max-width: 999px) {
+@media (min-width: 325px)  and (max-width: 499px) {
+    .card {
+        width: 280px;
+        height: 430px;
+    }
+
+    .container-img-servicos {
+        margin: 0 0 20px 0;
+    }
+
+    .texto-servicos {
+        font-size: 15px;
+    }
+
     .texto-sobre {
         width: 300px;
     }
 
     .projeto {
+        display: none;
+    }
+
+    .projeto-mobile {
         width: 350px;
+        display: unset;
     }
 
     .texto-container-1 {
@@ -1521,7 +1586,13 @@ body {
 
     .card {
         width: 250px;
-        height: 290px;
+        height: 450px;
+        margin: 20px;
+    }
+
+    .conteudo-servicos {
+        padding: 10px;
+        font-size: 15px;
     }
 
     #equipe {
@@ -1542,18 +1613,13 @@ body {
         height: 150px;
     }
 
+    .container-projetos {
+        width: 100%;
+    }
+
     .projeto {
         background-color: #e0e0e0;
-        width: 600px;
-        height: 300px;
-    }
-
-    #projeto1 {
-        display: none;
-    }
-
-    #projeto3 {
-        display: none;
+        width: 700px;
     }
 
     .em-breve {
@@ -2008,4 +2074,3 @@ body {
         margin-top: 130px;
     }
 }
-
