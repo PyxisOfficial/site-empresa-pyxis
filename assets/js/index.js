@@ -52,9 +52,9 @@ const ativarScroll = () => {
     voltarTopo.classList.toggle("voltar-topo-ativo", scrollY > 0)
 
     if (scrollY === 0) {
-        logo.setAttribute("src", "assets/img/logo-branca.png");
+        logo.setAttribute("src", "assets/img/logos/pyxis-branca-sem-slogan.png");
     } else {
-        logo.setAttribute("src", "assets/img/logo.png");
+        logo.setAttribute("src", "assets/img/logos/pyxis-sem-slogan.png");
     }
 
     links.forEach((e) => {

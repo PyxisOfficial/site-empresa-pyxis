@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/logo-pyxis.png">
+    <link rel="shortcut icon" href="assets/img/logos/logo.svg">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
     <title>PYXIS - Em direção ao futuro</title>
@@ -16,15 +16,16 @@
         <a href="#home" class="voltar-topo">Voltar para o topo ↑</a>
         <img src="assets/img/backgrounds/estrelas.png" id="estrelas" class="estrelas estrelas_animation">
         <nav id="navbar" class="navbar select-disable">
-            <a href="#home"><img src="assets/img/logo-branca.png" alt="Logo PYXIS" id="logo" class="logo-navbar"></a>
+            <a href="#home"><img src="assets/img/logos/pyxis-branca-sem-slogan.png" alt="Logo PYXIS" id="logo" class="logo-navbar"></a>
             <div class="mobile-menu">
                 <div class="line-1 line"></div>
                 <div class="line-2 line"></div>
                 <div class="line-3 line"></div>
             </div>
             <ul class="navbar-list">
-                <li class="navbar-list-item"><a href="#servicos" class="navbar-links bottom_animation">Serviços</a></li>
                 <li class="navbar-list-item"><a href="#sobre" class="navbar-links bottom_animation">Sobre Nós</a></li>
+                <li class="navbar-list-item"><a href="#servicos" class="navbar-links bottom_animation">Serviços</a></li>
+                <li class="navbar-list-item"><a href="#equipe" class="navbar-links bottom_animation">Nossa Equipe</a></li>
                 <li class="navbar-list-item"><a href="#projetos" class="navbar-links bottom_animation">Projetos</a></li>
                 <li class="navbar-list-item"><a href="#contato" class="navbar-links bottom_animation">Contato</a></li>
             </ul>
@@ -32,11 +33,9 @@
 
         <div class="content-header">
             <div class="textos-header">
-                <h1 class="titulo-azul">Bem-vindo a Pyxis!</h1>
-                <h2 class="titulo-header texto-branco">Sempre em direção <br> ao fututo!</h2>
-                <p class="descricao-header texto-branco">Somos uma empresa de desenvolvimento de software, possuímos
-                    como principal
-                    missão a resolução de problemas por meio da tecnologia.</p>
+                <h1 class="titulo-azul">Conheça a <span class="azul">Pyxis</span></h1>
+                <h2 class="titulo-header texto-branco">Sempre em direção ao fututo!</h2>
+                <p class="descricao-header">A empresa criada para resolver os seus problemas através tecnologia!</p>
                 <a href="#contato"><button class="btn-header select-disable">Entre em contato</button></a>
             </div>
             <div class="imgs-top select-disable">
@@ -53,37 +52,49 @@
     </header>
 
     <main class="main">
+        <section id="sobre">
+            <div class="container-sobre">
+                <img src="assets/img/logos/logo.svg" alt="Logo PYXIS" class="logo-sobre select-disable" data-anime="left">
+                <div class="container-texto-sobre">
+                    <h2 class="titulo-sobre" data-anime="left">Sobre Nós</h2>
+                    <p class="texto-sobre" data-anime="left">
+                        Somos uma pequena empresa de desenvolvimento de sistemas com o objetivo de trazer soluções eficazes e tecnológicas para os mais variados problemas 
+                        de nossos clientes. Temos como foco o desenvolvimento para empresas de pequeno e médio porte. Confira abaixo os serviços que oferecemos.                   
+                </div>
+            </div>
+        </section>
 
         <section id="servicos">
             <h2 class="titulo-servicos" data-anime="left">Serviços oferecidos</h2>
             <div class="container-cards">
-                <div class="card" data-anime="left">
-                    <h3 class="titulo-card">Design</h3>
+                <div class="card-servicos" data-anime="left">
+                    <h3 class="titulo-card-servicos">Design</h3>
                     <div class="conteudo-servicos">
                         <div class="container-img-servicos" data-anime="bottom"><img
                                 src="assets/img/servicos/design.svg " alt="" class="img-servicos select-disable"></div>
                         <p class="texto-servicos">Sistemas com designs criativos, inovadores, e especialmente pensados
-                            para melhor experiência do usuário.</p>
+                            para melhor experiência do usuário!</p>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
-                    <h3 class="titulo-card">Sistemas Web</h3>
+                <div class="card-servicos" data-anime="bottom">
+                    <h3 class="titulo-card-servicos">Sistemas Web</h3>
                     <div class="conteudo-servicos">
                         <div class="container-img-servicos" data-anime="bottom"><img src="assets/img/servicos/web.svg"
                                 alt="" class="img-servicos select-disable"></div>
                         <p class="texto-servicos">Sites customizados e responsivos, criados da melhor maneira para
-                            atender as suas necessidades.</p>
+                            atender as suas necessidades!</p>
                     </div>
                 </div>
-                <div class="card" data-anime="right">
-                    <h3 class="titulo-card">Mobile</h3>
+                <div class="card-servicos" data-anime="right">
+                    <h3 class="titulo-card-servicos">Mobile</h3>
                     <div class="conteudo-servicos">
                         <div class="container-img-servicos" data-anime="bottom"><img
                                 src="assets/img/servicos/mobile.svg" alt="" class="img-servicos select-disable"></div>
                         <p class="texto-servicos">Aplicativos interativos, intuitivos e otimizados. Planejados para
-                            facilitar as atividades cotidianas, de uma maneira mais simples e rápida.</p>
+                            facilitar as atividades cotidianas, de uma maneira mais simples e rápida!</p>
                     </div>
                 </div>
+                <span class="msg-servicos" data-anime="bottom">Se interessou pelos serviços? <a href="#contato" class="azul">Entre em contato!</a></span>
             </div>
         </section>
 
@@ -93,10 +104,10 @@
                     <h2 class="texto-branco" data-anime="top">Nossa equipe</h2>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/gab.jpg" alt="Foto Gabriel"></div>
                     <h4 class="texto-branco nome-equipe">Gabriel Vinicius</h4>
-                    <h4 class="funcao-equipe texto-branco">Front-end</h4>
+                    <h4 class="funcao-equipe texto-branco">Full-Stack Mobile</h4>
                     <div class="div-redes-sociais select-disable">
                         <a href="https://github.com/VMDGab" target="_blank"><img src="assets/img/icons/github.png"
                                 alt="Ícone GitHub" class="redes-sociais"></a>
@@ -107,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/igor.jpg" alt="Foto Igor"></div>
                     <h4 class="texto-branco nome-equipe">Igor Ferreira</h4>
                     <h4 class="funcao-equipe texto-branco">Back-end</h4>
@@ -121,8 +132,8 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
-                    <div class="foto select-disable"><img src="assets/img/fotos/julia.jpg" alt="Foto Julia"></div>
+                <div class="div-foto" data-anime="left">
+                    <div class="foto select-disable"><img src="assets/img/fotos/julia.png" alt="Foto Julia"></div>
                     <h4 class="texto-branco nome-equipe">Julia Rufino</h4>
                     <h4 class="funcao-equipe texto-branco">Gerente de Projetos</h4>
                     <div class="div-redes-sociais select-disable">
@@ -135,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/kau.jpg" alt="Foto Kauanny"></div>
                     <h4 class="texto-branco nome-equipe">Kauanny Tenorio</h4>
                     <h4 class="funcao-equipe texto-branco">CEO</h4>
@@ -150,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/leo.jpg" alt="Foto Leonardo"></div>
                     <h4 class="texto-branco nome-equipe">Leonardo Santos</h4>
                     <h4 class="funcao-equipe texto-branco">Full-stack</h4>
@@ -164,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/luigi.jpg" alt="Foto Luigi"></div>
                     <h4 class="texto-branco nome-equipe">Luigi Vicchietti</h4>
                     <h4 class="funcao-equipe texto-branco">Analista</h4>
@@ -178,7 +189,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/pablo.jpg" alt="Foto Pablo"></div>
                     <h4 class="texto-branco nome-equipe">Pablo Vinicius</h4>
                     <h4 class="funcao-equipe texto-branco">DBA</h4>
@@ -192,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/well.jpg" alt="Foto Wellington"></div>
                     <h4 class="texto-branco nome-equipe">Wellington Augusto</h4>
                     <h4 class="funcao-equipe texto-branco">Back-end</h4>
@@ -207,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="div-foto" data-anime="bottom">
+                <div class="div-foto" data-anime="left">
                     <div class="foto select-disable"><img src="assets/img/fotos/yuri.jpg" alt="Foto Yuri"></div>
                     <h4 class="texto-branco nome-equipe">Yuri Oliveira</h4>
                     <h4 class="funcao-equipe texto-branco">Designer UX/UI e Front-end</h4>
@@ -223,53 +234,35 @@
             </div>
         </section>
 
-        <section id="sobre">
-            <div class="container-sobre">
-                <img src="assets/img/logo-pyxis.png" alt="Logo PYXIS" class="logo-sobre select-disable"
-                    data-anime="left">
-                <div class="container-texto-sobre">
-                    <h2 class="titulo-sobre" data-anime="left">Sobre Nós</h2>
-                    <p class="texto-sobre" data-anime="left">
-                        A Pyxis é uma empresa de desenvolvimento de softwares, que possui como principal missão a
-                        resolução
-                        de problemas por meio da tecnologia.
-                        A empresa Pyxis foi fundada em 04/03/2022 por Gabriel Vinícius Matos Dantas, Igor Ferreira
-                        Gazuza de
-                        Freita, Julia Alves Rufino, Kauanny Tenório Félix da Silva, Leonardo Aparecido de Paula Santos,
-                        Luigi Tadeu Vicchietti, Pablo Vinícius Silva Santos, Wellington Augusto Souza Aguiar e Yuri
-                        Oliveira
-                        da Silva com o objetivo de desenvolver o trabalho de conclusão do curso de técnico de
-                        informática
-                        integrado ao médio da escola técnica estadual de Guaianazes, em São Paulo, SP.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <section id="historico">
             <h2 class="titulo-historico" data-anime="top">Linha do tempo</h2>
-            <div class="container-historico" data-anime="left">
-                <img src="assets/img/backgrounds/historico.png" class="imgs-historico select-disable">
-                <img src="assets/img/backgrounds/historico-mobile.png" class="imgs-historico-mobile select-disable">
+            <div class="container-historico" data-anime="bottom">
+                <img src="assets/img/backgrounds/historico.svg" class="imgs-historico select-disable">
+                <img src="assets/img/backgrounds/historico-mobile.svg" class="imgs-historico-mobile select-disable">
 
-                <div class="texto-container-1">
+                <div class="texto-container texto-container-1">
                     <h3 class="data-historico">Fevereiro – 07/22</h3>
-                    <p>A empresa foi fundada por Gabriel Vinicius, Igor Ferreira, Julia Rufino, Kauanny Tenorio,
+                    <p class="texto-historico">A empresa foi fundada por Gabriel Vinicius, Igor Ferreira, Julia Rufino, Kauanny Tenorio,
                         Leonardo Santos, Luigi Vicchietti, Pablo Vinicius, Wellington Augusto e Yuri Oliveira.
                     </p>
                 </div>
 
-                <div class="texto-container-2">
+                <div class="texto-container texto-container-2">
                     <h3 class="data-historico">Fevereiro – 14/22</h3>
-                    <p>Foram decididos o nome da empresa e sua identidade visual. Também foram arquitetadas nossa visão,
+                    <p class="texto-historico">Foram decididos o nome da empresa e sua identidade visual. Também foram arquitetadas nossa visão,
                         missão e valores.
                     </p>
                 </div>
 
-                <div class="texto-container-3">
+                <div class="texto-container texto-container-3">
                     <h3 class="data-historico">Abril - 25/22</h3>
-                    <p>Foi decidido o tema do projeto e iniciado sua metodologia científica.
+                    <p class="texto-historico">Foi decidido o tema do projeto e iniciado sua metodologia científica.
                     </p>
+                </div>
+
+                <div class="texto-container texto-container-4">
+                    <h3 class="data-historico">Julho - 27/07</h3>
+                    <p class="texto-historico">A empresa começou a atuar no mercado, iniciando o desenvolvimento de primeiro projeto, o BuscaSUS.</p>
                 </div>
             </div>
         </section>
@@ -307,7 +300,7 @@
             <div class="container-contato" data-anime="bottom">
                 <div class="container-img">
                     <h2 class="titulo-contato">Entre em contato conosco!</h2>
-                    <img src="assets/img/backgrounds/astronauta.png" alt="" class="select-disable">
+                    <img src="assets/img/backgrounds/astronauta.svg" alt="" class="select-disable">
                     <a href="index.html">
                     </a>
                 </div>
@@ -337,7 +330,7 @@
 
     <footer class="footer">
         <div class="card-footer-logo select-disable">
-            <img src="assets/img/logo-branca.png" alt="Logo PYXIS">
+            <img src="assets/img/logos/pyxis-branca-sem-slogan.png" alt="Logo PYXIS">
             <p class="texto-copyright">© 2022 Copyright - PYXIS</p>
         </div>
 
