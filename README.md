@@ -2,6 +2,8 @@
 <img src="assets/img/logo.png" height="164em">
 </div>
 
+<br>
+
 <p>Site no formato landing page sobre a Pyxis, uma empresa de desenvolvimento de sistemas com o objetivo de trazer soluções eficazes e tecnológicas para os mais variados problemas de nossos clientes. Temos como foco o desenvolvimento para empresas de pequeno e médio porte. </p>
 
 <br>
@@ -21,3 +23,9 @@
 ‣ 👨‍🚀 [Leonardo Santos](https://github.com/leOhsantos)
 <br>
 ‣ 👨‍🚀 [Yuri Oliveira](https://github.com/YuriOlivs)
+
+<br>
+
+# 🔗 Link do site
+
+‣ https://pyxisofficial.github.io/siteEmpresaPyxis/
