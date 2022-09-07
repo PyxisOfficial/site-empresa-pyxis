@@ -100,11 +100,11 @@ body {
 }
 
 .navbar-ativo {
-    background: rgba( 255, 255, 255, 0.85 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 13px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .logo-navbar {
@@ -204,7 +204,7 @@ body {
     100% {
         transform: translate(0, -1100px);
     }
-}   
+}
 
 .azul {
     color: #266ef3;
@@ -503,7 +503,7 @@ body {
     border-top-right-radius: 14px;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 2px;  
+    letter-spacing: 2px;
     font-size: 25px;
     font-weight: 700;
 }
@@ -927,8 +927,8 @@ body {
     display: flex;
     width: 50%;
     height: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(157deg, rgba(0,0,0,1) 18%, rgba(14,14,48,1) 48%, rgba(18,18,66,1) 71%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(157deg, rgba(0, 0, 0, 1) 18%, rgba(14, 14, 48, 1) 48%, rgba(18, 18, 66, 1) 71%);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -943,7 +943,7 @@ body {
     height: 445px;
 }
 
-#nomeUser, 
+#nomeUser,
 #emailUser,
 #assuntoUser,
 #msgUser {
@@ -962,7 +962,7 @@ body {
     transition: border .1s linear, outline .1s ease-in-out, background .2s linear;
 }
 
-#nomeUser:focus, 
+#nomeUser:focus,
 #emailUser:focus,
 #assuntoUser:focus,
 #msgUser:focus {
@@ -1110,15 +1110,15 @@ body {
         0% {
             transform: translate(0%, 0);
         }
-    
+
         50% {
             transform: translate(0, -100px);
         }
-    
+
         100% {
             transform: translate(0, -200px);
         }
-    } 
+    }
 
     #home {
         height: 500px;
@@ -1240,7 +1240,7 @@ body {
     .titulo-sobre,
     .titulo-servicos,
     .titulo-projetos,
-    .titulo-historico, 
+    .titulo-historico,
     .titulo-parcerias {
         font-size: 1em;
     }
@@ -1356,7 +1356,7 @@ body {
     .container-historico p {
         font-size: 11px;
     }
-    
+
     .texto-container {
         position: absolute;
         width: 190px;
@@ -1429,7 +1429,7 @@ body {
         background-position: 100%;
     }
 
-    #nomeUser, 
+    #nomeUser,
     #emailUser,
     #assuntoUser,
     #msgUser {
@@ -1474,7 +1474,7 @@ body {
     }
 }
 
-@media (min-width: 325px)  and (max-width: 499px) {
+@media (min-width: 325px) and (max-width: 499px) {
     .card {
         width: 280px;
         height: 430px;
@@ -1588,105 +1588,105 @@ body {
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes floating {
         0% {
             transform: translate(0, -5px);
         }
-    
+
         50% {
             transform: translate(0, 10px);
         }
-    
+
         100% {
             transform: translate(0, -5px);
         }
     }
-    
+
     .green-lever {
         animation-name: green-lever;
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes green-lever {
         0% {
             transform: translate(0, 0);
         }
-    
+
         50% {
             transform: translate(0, -13px);
         }
-    
+
         100% {
             transform: translate(0, 0);
         }
     }
-    
+
     .red-lever {
         animation-name: red-lever;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes red-lever {
         0% {
             transform: translate(0, -10px);
         }
-    
+
         50% {
             transform: translate(0, 10px);
         }
-    
+
         100% {
             transform: translate(0, -10px);
         }
     }
-    
+
     .yellow-lever {
         animation-name: yellow-lever;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes yellow-lever {
         0% {
             transform: translate(0, 0);
         }
-    
+
         50% {
             transform: translate(0, 10px);
         }
-    
+
         100% {
             transform: translate(0, 0);
         }
     }
-    
+
     .red-light {
         animation-name: red-light;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    
+
     @keyframes red-light {
         0% {
             opacity: 1;
         }
-    
+
         50% {
             opacity: 0;
         }
-    
+
         100% {
             opacity: 1;
         }
     }
-    
+
 
     .main {
         margin: 0;
@@ -1851,7 +1851,7 @@ body {
         font-size: 16px;
     }
 
-    #nomeUser, 
+    #nomeUser,
     #emailUser,
     #assuntoUser,
     #msgUser {
@@ -1906,10 +1906,10 @@ body {
     }
 
     .navbar {
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 13px );
-        -webkit-backdrop-filter: blur( 13px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
@@ -1925,10 +1925,12 @@ body {
         align-items: center;
         justify-content: space-evenly;
         background: rgb(0, 0, 23, 0.85);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 13px );
-        -webkit-backdrop-filter: blur( 13px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-left: unset;
+        border-right: unset;
         transform: translateX(100%);
         transition: transform .3s ease-in;
         border-bottom-left-radius: 10px;
@@ -1940,11 +1942,11 @@ body {
     }
 
     .navbar-list-branco {
-        background: rgba( 255, 255, 255, 0.85 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 13px );
-        -webkit-backdrop-filter: blur( 13px );
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
         transition: all .5s ease-in-out;
     }
 
@@ -1970,7 +1972,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1439px){
+@media (min-width: 1000px) and (max-width: 1439px) {
     .titulo-header {
         width: 500px;
     }
@@ -1990,7 +1992,7 @@ body {
     .navbar-list-item {
         margin-right: 30px;
     }
-    
+
 
     .navbar-links {
         font-size: 16px;
@@ -2055,7 +2057,7 @@ body {
         background-position: 100%;
     }
 
-    #nomeUser, 
+    #nomeUser,
     #emailUser,
     #assuntoUser,
     #msgUser {

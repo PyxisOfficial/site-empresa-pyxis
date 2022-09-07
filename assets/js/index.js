@@ -72,7 +72,7 @@ const ativarScroll = () => {
         } else {
             e.classList.remove("animate");
         }
-    })    
+    })
 }
 
 const validarCampos = () => {
@@ -160,7 +160,7 @@ document.addEventListener("keypress", () => {
     }
 });
 
-window.addEventListener("scroll", ativarScroll);
+window.addEventListener("scroll", _.debounce(ativarScroll, 80));
 btnSubmit.addEventListener("click", validarCampos);
 inputNome.addEventListener("input", removerErro);
 inputEmail.addEventListener("input", removerErro);
