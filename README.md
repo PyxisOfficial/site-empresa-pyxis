@@ -8,7 +8,7 @@
 
 <br>
 
-# 🚀 Skills
+## 🚀 Skills
 
 <div align="left">
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -19,7 +19,7 @@
 
 <br>
 
-# 💻 Desenvolvedores
+## 💻 Desenvolvedores
 
 ‣ 👨‍🚀 [Leonardo Santos](https://github.com/leOhsantos)
 <br>
@@ -27,6 +27,6 @@
 
 <br>
 
-# 🔗 Link do site
+## 🔗 Link do site
 
 ‣ https://pyxisofficial.github.io/siteEmpresaPyxis/
