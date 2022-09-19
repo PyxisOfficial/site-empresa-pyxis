@@ -1,10 +1,11 @@
-const voltarTopo = document.getElementsByClassName("voltar-topo")[0],
-    bgEstrelas = document.getElementById("estrelas"),
-    navbar = document.getElementById("navbar"),
+const bgEstrelas = document.getElementById("estrelas"),
+    nav = document.getElementById("nav"),
     logo = document.getElementById("logo"),
+    mobileMenu = document.querySelector(".mobile-menu"),
+    navList = document.querySelector(".nav-list"),
+    navItems = document.querySelectorAll(".nav-list-item"),
     linesMenu = document.querySelectorAll(".line"),
-    navbarList = document.querySelector(".navbar-list"),
-    links = document.querySelectorAll(".navbar-links"),
+    links = document.querySelectorAll(".nav-links"),
     target = document.querySelectorAll("[data-anime]"),
     form = document.getElementById("formContato"),
     inputNome = document.getElementById("nomeUser"),
@@ -14,42 +15,20 @@ const voltarTopo = document.getElementsByClassName("voltar-topo")[0],
     errorText = document.getElementsByClassName("error-text"),
     btnSubmit = document.getElementById("btnSubmit");
 
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.handleClick = this.handleClick.bind(this);
-        this.activeClass = "active";
-    }
+function handleMenu() {
+    navList.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-                ? (link.style.animation = "")
-                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
-        })
-    }
-
-    handleClick() {
-        this.navList.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
+    navItems.forEach((link, index) => {
+        link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+    })
 }
-const mobileNavbar = new MobileNavbar(".mobile-menu", ".navbar-list", ".navbar-list-item",);
-mobileNavbar.addClickEvent();
 
-const ativarScroll = () => {
-    const windowTop = window.pageYOffset + (window.innerHeight * 1);
-
-    navbar.classList.toggle("navbar-ativo", scrollY > 0)
-    navbarList.classList.toggle("navbar-list-branco", scrollY > 0)
-    voltarTopo.classList.toggle("voltar-topo-ativo", scrollY > 0)
+function changeNav() {
+    nav.classList.toggle("nav-ativo", scrollY > 0);
+    navList.classList.toggle("nav-list-branco", scrollY > 0);
 
     if (scrollY === 0) {
         logo.setAttribute("src", "assets/img/logos/pyxis-branca-sem-slogan.png");
@@ -58,13 +37,16 @@ const ativarScroll = () => {
     }
 
     links.forEach((e) => {
-        e.classList.toggle("navbar-links-ativo", scrollY > 0);
-    })
+        e.classList.toggle("nav-links-ativo", scrollY > 0);
+    });
 
     linesMenu.forEach((e) => {
         e.classList.toggle("line-ativo", scrollY > 0);
+    });
+}
 
-    })
+function animateElements() {
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
 
     target.forEach((e) => {
         if (windowTop > e.offsetTop) {
@@ -72,11 +54,11 @@ const ativarScroll = () => {
         } else {
             e.classList.remove("animate");
         }
-    })
+    });
 }
 
-const validarCampos = () => {
-    let valueNome = inputNome.value,
+function validateInputs() {
+    const valueNome = inputNome.value,
         regexEmail = /\S+@\S+\.\S+/,
         emailTest = regexEmail.test(inputEmail.value),
         valueAssunto = inputAssunto.value,
@@ -119,8 +101,8 @@ const validarCampos = () => {
     }
 }
 
-const removerErro = () => {
-    let valueNome = inputNome.value,
+function removeInputsError() {
+    const valueNome = inputNome.value,
         regexEmail = /\S+@\S+\.\S+/,
         emailTest = regexEmail.test(inputEmail.value),
         valueAssunto = inputAssunto.value,
@@ -148,10 +130,7 @@ const removerErro = () => {
 }
 
 if (window.matchMedia("(max-width: 999px)").matches) {
-    target.forEach((e) => {
-        e.removeAttribute("data-anime");
-        bgEstrelas.classList.remove("estrelas_animation");
-    })
+    bgEstrelas.classList.remove("estrelas_animation");
 }
 
 document.addEventListener("keypress", () => {
@@ -160,9 +139,11 @@ document.addEventListener("keypress", () => {
     }
 });
 
-window.addEventListener("scroll", _.debounce(ativarScroll, 80));
-btnSubmit.addEventListener("click", validarCampos);
-inputNome.addEventListener("input", removerErro);
-inputEmail.addEventListener("input", removerErro);
-inputAssunto.addEventListener("input", removerErro);
-inputMsg.addEventListener("input", removerErro);
+window.addEventListener("scroll", changeNav);
+window.addEventListener("scroll", animateElements);
+mobileMenu.addEventListener("click", handleMenu);
+btnSubmit.addEventListener("click", validateInputs);
+inputNome.addEventListener("input", removeInputsError);
+inputEmail.addEventListener("input", removeInputsError);
+inputAssunto.addEventListener("input", removeInputsError);
+inputMsg.addEventListener("input", removeInputsError);
