@@ -1480,7 +1480,7 @@ body {
 
     .card-footer-contato {
         width: unset;
-        padding-top: 60px;
+        padding-top: 108px;
     }
 }
 
@@ -1949,7 +1949,7 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.18);
         border-left: unset;
         border-right: unset;
-        transform: translateX(100%);
+        transform: translateX(101%);
         transition: transform .3s ease-in;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
