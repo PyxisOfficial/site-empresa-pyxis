@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 13vh;
+    scroll-padding-top: 8vh;
 }
 
 body::-webkit-scrollbar {
@@ -231,7 +231,7 @@ body {
     content: '';
     display: block;
     width: 0;
-    height: 3px;
+    height: 1px;
     background: #ffffff;
     transform: skew(-50deg);
     transition: width .3s;
@@ -585,7 +585,7 @@ body {
     text-align: center;
 }
 
-#equipe {
+.equipe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -599,21 +599,24 @@ body {
 
 .container-equipe {
     margin-top: -90px;
-    display: grid;
-    grid-template-areas: "titulo titulo titulo"
-        "foto foto foto"
-        "foto foto foto"
-        "foto foto foto";
-    grid-column-gap: 170px;
-    grid-row-gap: 45px;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     justify-content: center;
 }
 
 .titulo-equipe {
-    grid-area: titulo;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.line-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .div-foto {
@@ -623,6 +626,7 @@ body {
     justify-content: space-between;
     width: 210px;
     height: 245px;
+    margin: 20px 0 40px 0;
 }
 
 .foto {
@@ -1086,7 +1090,8 @@ body {
     font-size: 13px;
 }
 
-.footer-list-item a {
+.footer-list-item a,
+.item-contato a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -1131,7 +1136,7 @@ body {
     }
 
     #home {
-        height: 500px;
+        height: 660px;
     }
 
     .content-header {
@@ -1223,7 +1228,7 @@ body {
         margin-top: 30px;
     }
 
-    #equipe {
+    .equipe {
         margin-top: 20px;
         height: 3120px;
     }
@@ -1233,6 +1238,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .line-equipe {
+        all: unset;
     }
 
     .redes-sociais {
@@ -1732,12 +1741,8 @@ body {
         font-size: 14px;
     }
 
-    #equipe {
+    .equipe {
         margin: 50px 0 0 0;
-    }
-
-    .container-equipe {
-        grid-column-gap: 50px;
     }
 
     .foto {
@@ -2156,12 +2161,8 @@ body {
         height: 70px;
     }
 
-    #equipe {
+    .equipe {
         height: 1900px;
-    }
-
-    .container-equipe {
-        grid-row-gap: 80px;
     }
 
     .div-foto {
