@@ -8,7 +8,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 8vh;
+    scroll-padding-top: 13vh;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -1916,18 +1917,6 @@ body {
 }
 
 @media (max-width: 999px) {
-    html {
-        scroll-padding-top: 260px;
-    }
-
-    [data-anime="right"] {
-        transform: translate3d(-100px, 0, 0);
-    }
-
-    [data-anime="left-equipe"] {
-        transform: translate3d(0, -100px, 0);
-    }
-
     .nav {
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(13px);
