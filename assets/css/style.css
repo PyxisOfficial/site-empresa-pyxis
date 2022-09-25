@@ -32,7 +32,7 @@ body {
 
 [data-anime] {
     opacity: 0;
-    transition: .6s;
+    transition: .6s ease-in-out;
     z-index: -1;
 }
 
@@ -40,7 +40,6 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
     z-index: 1;
-    transition: .6s;
 }
 
 [data-anime="top"] {
@@ -627,7 +626,7 @@ body {
     justify-content: space-between;
     width: 210px;
     height: 245px;
-    margin: 20px 0 40px 0;
+    margin: 20px 20px 50px 20px;
 }
 
 .foto {
@@ -1231,7 +1230,7 @@ body {
 
     .equipe {
         margin-top: 20px;
-        height: 3120px;
+        height: 3200px;
     }
 
     .container-equipe {
@@ -1424,7 +1423,7 @@ body {
     }
 
     .img-parceria {
-        width: 300px;
+        width: 260px;
     }
 
     #contato {
@@ -1543,7 +1542,7 @@ body {
     }
 
     .img-parceria {
-        width: 350px;
+        width: 260px;
     }
 
     .titulo-parcerias::before {
@@ -1917,6 +1916,12 @@ body {
 }
 
 @media (max-width: 999px) {
+    [data-anime] {
+        opacity: 0;
+        transition: .6s ease;
+        z-index: -1;
+    }
+
     .nav {
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(13px);
