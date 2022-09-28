@@ -1,0 +1,177 @@
+.logo-nav {
+    max-height: 140px;
+}
+
+.nav-list-item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    font-size: 2em;
+}
+
+.textos-header {
+    width: 1000px;
+}
+
+.titulo-header,
+.titulo-azul {
+    font-size: 4em;
+}
+
+.titulo-header::before {
+    width: 300px;
+    height: 28px;
+    left: 396px;
+    top: 80px;
+}
+
+.descricao-header,
+.texto-contato,
+.titulo-equipe,
+.nome-equipe,
+.texto-sobre,
+.container-historico p,
+.titulos-footer,
+.footer-list-item,
+.item-contato {
+    font-size: 2em;
+}
+
+.btn-header {
+    width: 300px;
+    height: 80px;
+    font-size: xx-large;
+}
+
+.titulo-servicos::before {
+    width: 546px;
+    height: 26px;
+    top: 63px;
+}
+
+.card {
+    width: 600px;
+    height: 670px;
+}
+
+.titulo-card {
+    font-size: 2em;
+    height: 70px;
+}
+
+.equipe {
+    height: 1900px;
+}
+
+.div-foto {
+    width: 310px;
+    height: 345px;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+}
+
+.foto img {
+    width: 300px;
+    height: 300px;
+}
+
+.redes-sociais {
+    width: 34px;
+}
+
+.container-sobre {
+    width: 1000px;
+}
+
+.titulo-sobre,
+.titulo-servicos,
+.titulo-projetos,
+.titulo-historico {
+    font-size: 3em;
+}
+
+.titulo-projetos::before {
+    width: 257px;
+    height: 26px;
+    top: 63px;
+}
+
+.projeto {
+    width: 550px;
+    height: 500px;
+}
+
+.titulo-sobre::before {
+    width: 290px;
+    height: 26px;
+    top: 63px;
+}
+
+.texto-sobre {
+    width: 1000px;
+}
+
+#historico {
+    height: 2100px;
+}
+
+.container-historico {
+    height: 2000px;
+}
+
+.imgs-historico {
+    width: 1900px;
+}
+
+.data-historico {
+    font-size: 3em;
+    white-space: nowrap;
+}
+
+.texto-container-1 {
+    width: 500px;
+    top: -91%;
+    left: 40%;
+}
+
+.texto-container-2 {
+    width: 500px;
+    top: -77%;
+    left: 30%;
+}
+
+.texto-container-3 {
+    width: 500px;
+    top: -55%;
+    left: 40%;
+}
+
+.footer {
+    padding-bottom: 150px;
+}
+
+.card-footer-logo img {
+    max-height: 150px;
+}
+
+.texto-copyright {
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+.footer .redes-sociais {
+    width: 50px;
+}
+
+.card-footer-logo,
+.card-footer-sobre,
+.card-footer-contato {
+    width: 400px;
+}
+
+.card-footer-contato {
+    margin-top: 130px;
+}

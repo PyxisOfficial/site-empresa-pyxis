@@ -1,0 +1,445 @@
+
+@keyframes estrelas_animation {
+    0% {
+        transform: translate(0%, 0);
+    }
+
+    50% {
+        transform: translate(0, -100px);
+    }
+
+    100% {
+        transform: translate(0, -200px);
+    }
+}
+
+#home {
+    height: 660px;
+}
+
+.content-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos-header {
+    text-align: center;
+    width: 250px;
+}
+
+.titulo-header,
+.titulo-azul {
+    font-size: 17px;
+    width: 250px;
+}
+
+.titulo-header::before {
+    width: 0px;
+    height: 7px;
+    left: 138px;
+    top: 22px;
+}
+
+.descricao-header {
+    width: 270px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.btn-header {
+    width: 150px;
+    height: 40px;
+    font-size: smaller;
+    margin-bottom: 24px;
+}
+
+.imgs-top {
+    display: none;
+}
+
+.bloco-header {
+    display: none;
+}
+
+.computador-top,
+.planeta-top,
+.alavancas,
+.luzes {
+    width: 200px;
+}
+
+.main {
+    padding-top: 50px;
+}
+
+.card {
+    width: 230px;
+    height: 430px;
+}
+
+.card-servicos {
+    width: 230px;
+    height: 430px;
+}
+
+.container-img-servicos {
+    margin: 0 0 5px 0;
+}
+
+.texto-servicos {
+    font-size: 14px;
+}
+
+.msg-servicos {
+    width: 250px;
+    font-size: 15px;
+}
+
+.conteudo-servicos {
+    padding: 10px;
+}
+
+.container-cards {
+    margin-top: 30px;
+}
+
+.equipe {
+    margin-top: 20px;
+    height: 3200px;
+}
+
+.container-equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-foto {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 115px;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+}
+
+.foto img {
+    width: 180px;
+    height: 180px;
+}
+
+.line-equipe {
+    all: unset;
+}
+
+.redes-sociais {
+    width: 23px;
+}
+
+#servicos,
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-sobre,
+.titulo-servicos,
+.titulo-projetos,
+.titulo-historico,
+.titulo-parcerias {
+    font-size: 1em;
+}
+
+.titulo-servicos::before {
+    width: 181px;
+    height: 8px;
+    top: 20px;
+}
+
+.titulo-card {
+    font-size: 1em;
+}
+
+.titulo-equipe {
+    font-size: 13px;
+}
+
+.container-projetos {
+    margin-top: 20px;
+}
+
+.titulo-projetos::before {
+    width: 96px;
+    height: 8px;
+    top: 20px;
+}
+
+.projeto {
+    display: none;
+}
+
+.container-projetos {
+    width: 100%;
+}
+
+.projeto-mobile {
+    width: 300px;
+    display: unset;
+}
+
+.em-breve {
+    font-size: 2em;
+}
+
+#sobre {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 50px 0;
+}
+
+.titulo-sobre::before {
+    width: 108px;
+    height: 8px;
+    top: 20px;
+}
+
+.container-sobre {
+    flex-direction: column;
+}
+
+.container-texto-sobre {
+    all: unset;
+}
+
+.logo-sobre {
+    display: none;
+}
+
+.texto-sobre {
+    width: 250px;
+    font-size: 13px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+#historico {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    align-items: initial;
+    margin-top: -70px;
+    height: 800px;
+    background-image: url("../img/backgrounds/fundo-historico-mobile.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo-projetos {
+    margin-bottom: 10px;
+}
+
+.container-historico {
+    height: 650px;
+}
+
+.imgs-historico {
+    display: none;
+}
+
+.imgs-historico-mobile {
+    display: inline;
+    width: 130px;
+}
+
+.data-historico {
+    margin-bottom: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.container-historico p {
+    font-size: 11px;
+}
+
+.texto-container {
+    position: absolute;
+    width: 190px;
+    font-weight: 500;
+}
+
+.texto-container-1 {
+    top: 10px;
+    left: 130px;
+}
+
+.texto-container-2 {
+    top: 190px;
+    left: 130px;
+}
+
+.texto-container-3 {
+    top: 380px;
+    left: 130px;
+}
+
+.texto-container-4 {
+    top: 550px;
+    left: 130px;
+}
+
+#parcerias {
+    height: 350px;
+}
+
+.titulo-parcerias {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-parcerias::before {
+    width: 218px;
+    top: 12px;
+    left: 50px;
+}
+
+.container-parcerias {
+    margin: 0;
+}
+
+.img-parceria {
+    width: 260px;
+}
+
+#contato {
+    height: 700px;
+    margin-bottom: 0;
+}
+
+.container-contato {
+    height: 700px;
+    width: 100%;
+}
+
+.container-img {
+    display: none;
+}
+
+.container-form {
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-position: 100%;
+}
+
+#nomeUser,
+#emailUser,
+#assuntoUser,
+#msgUser {
+    width: 80%;
+}
+
+.titulo-contato-branco {
+    font-size: 16px;
+    top: 5%;
+}
+
+.footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: unset;
+    padding-bottom: 20px;
+}
+
+.card-footer-logo {
+    order: 3;
+    width: unset;
+    padding-top: 60px;
+}
+
+.card-footer-sobre {
+    width: 50px;
+    padding-top: 20px;
+}
+
+.card-footer-contato h5 {
+    text-align: center;
+}
+
+.footer-list-contato {
+    text-align: center;
+}
+
+.card-footer-contato {
+    width: unset;
+    padding-top: 108px;
+}
+
+
+@media (min-width: 325px) and (max-width: 499px) {
+    .card {
+        width: 280px;
+        height: 430px;
+    }
+
+    .card-servicos {
+        width: 280px;
+        height: 430px;
+    }
+
+    .container-img-servicos {
+        margin: 0 0 20px 0;
+    }
+
+    .texto-servicos {
+        font-size: 15px;
+    }
+
+    .texto-sobre {
+        width: 300px;
+    }
+
+    .projeto {
+        display: none;
+    }
+
+    .projeto-mobile {
+        width: 350px;
+        display: unset;
+    }
+
+    .texto-container-1 {
+        left: 40%;
+    }
+
+    .texto-container-2 {
+        left: 40%;
+    }
+
+    .texto-container-3 {
+        left: 40%;
+    }
+
+    .texto-container-4 {
+        left: 40%;
+    }
+
+    .img-parceria {
+        width: 260px;
+    }
+
+    .titulo-parcerias::before {
+        left: 23%;
+    }
+}
