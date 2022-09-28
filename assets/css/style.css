@@ -587,6 +587,7 @@ body {
 }
 
 .container-equipe {
+    width: 100%;
     margin-top: -90px;
     display: flex;
     flex-direction: column;
@@ -602,6 +603,7 @@ body {
 }
 
 .line-equipe {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

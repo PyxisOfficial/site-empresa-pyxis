@@ -18,18 +18,48 @@
     margin-right: 30px;
 }
 
-
 .nav-links {
     font-size: 16px;
 }
 
-.container-texto-sobre {
-    width: 500px;
-    margin-left: 0;
+.card-servicos {
+    margin-bottom: 50px;
+}
+
+.nome-equipe  {
+    font-size: 2vh;
+}
+
+.funcao-equipe {
+    font-size: 2vh;
+}
+
+.equipe {
+    height: 1000px;
+}
+
+.div-foto {
+    width: 160px;
+    height: 160px;
+}
+
+.foto {
+    width: 160px;
+    height: 160px;
+}
+
+.foto img {
+    width: 160px;
+    height: 160px;
+}
+
+.line-equipe {
+    margin-top: 80px;
 }
 
 #historico {
     height: 1400px;
+    margin-top: 50px;
 }
 
 .container-historico {
