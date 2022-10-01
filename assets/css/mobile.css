@@ -14,7 +14,20 @@
 }
 
 #home {
-    height: 660px;
+    height: 100vh;
+    position: relative;
+    background-image: none;
+    background: linear-gradient(150.3deg, #000017 30.71%, #0A0A32 65.47%, #14144E 101%);
+}
+
+.nav {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-ativo {
+    opacity: 1;
+    pointer-events: all;
 }
 
 .content-header {
@@ -25,15 +38,27 @@
     justify-content: center;
 }
 
+.logo-header-mobile {
+    display: block;
+    width: 50vw;
+}
+
 .textos-header {
     text-align: center;
-    width: 250px;
+    width: 90vw;
 }
 
 .titulo-header,
 .titulo-azul {
-    font-size: 17px;
-    width: 250px;
+    font-size: 1.7rem;
+    width: 100%;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.titulo-azul {
+    text-transform: none;
+    font-size: 1.5rem;
 }
 
 .titulo-header::before {
@@ -44,16 +69,47 @@
 }
 
 .descricao-header {
-    width: 270px;
+    width: 100%;
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
+    margin-top: 50px;
+    font-weight: 300;
 }
 
 .btn-header {
-    width: 150px;
-    height: 40px;
-    font-size: smaller;
-    margin-bottom: 24px;
+    display: none;
+}
+
+.entre-contato {
+    position: absolute;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    margin-top: 20vh;
+}
+
+.swipe {
+    animation: 2s swipe linear infinite;
+}
+
+@keyframes swipe {
+    0% {
+        transform: rotate(15deg) translateY(-5px);
+    }
+    20% {
+        transform: rotate(0) translateY(0);
+    }
+    50% {
+        transform: rotate(-15deg) translateY(5px);   
+    }
+    80% {
+        transform: rotate(0) translateY(0);
+    }
+    100% {
+        transform: rotate(15deg) translateY(-5px);
+    }
 }
 
 .imgs-top {

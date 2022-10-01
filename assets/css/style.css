@@ -132,6 +132,10 @@ body {
 }
 
 .nav {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    border: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -140,10 +144,11 @@ body {
     height: 12vh;
     width: 100vw;
     z-index: 2;
-    transition: background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .nav-ativo {
+
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(13px);
@@ -296,6 +301,10 @@ body {
     color: #000;
 }
 
+.logo-header-mobile {
+    display: none;
+}
+
 .textos-header {
     position: relative;
     top: 10%;
@@ -346,8 +355,7 @@ body {
     background-color: #266ef3;
     color: #fff;
     border: none;
-    width: 220px;
-    height: 42px;
+    padding: 10px 15px;
     border-radius: 50px;
     margin-top: 60px;
     cursor: pointer;
@@ -363,6 +371,10 @@ body {
     background-color: #588ff7;
     -webkit-box-shadow: 0px 0px 15px -1px #508cfc;
     box-shadow: 0px 0px 15px -1px #508cfc;
+}
+
+.entre-contato {
+    display: none;
 }
 
 .imgs-top {
@@ -1199,13 +1211,11 @@ body {
     }
 
     .nav {
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        background: rgb(7, 9, 36);
-        backdrop-filter: blur(13px);
-        -webkit-backdrop-filter: blur(13px);
+        background: rgba(7, 9, 36, 0);
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
+
     }
 
     .nav-ativo {
