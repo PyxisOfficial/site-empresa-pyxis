@@ -21,11 +21,13 @@
 }
 
 .nav {
+    top: -5%;
     opacity: 0;
     pointer-events: none;
 }
 
 .nav-ativo {
+    top: 0;
     opacity: 1;
     pointer-events: all;
 }
