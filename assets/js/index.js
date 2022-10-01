@@ -1,4 +1,5 @@
-const bgEstrelas = document.getElementById("estrelas"),
+const splash = document.querySelector('.splash'), 
+    bgEstrelas = document.getElementById("estrelas"),
     nav = document.getElementById("nav"),
     logo = document.getElementById("logo"),
     mobileMenu = document.querySelector(".mobile-menu"),
@@ -14,6 +15,12 @@ const bgEstrelas = document.getElementById("estrelas"),
     inputMsg = document.getElementById("msgUser"),
     errorText = document.getElementsByClassName("error-text"),
     btnSubmit = document.getElementById("btnSubmit");
+
+document.addEventListener("DOMContentLoaded", (e)=>{
+    setTimeout(()=>{
+        splash.classList.add('nothing')
+    }, 3000)
+})
 
 function handleMenu() {
     navList.classList.toggle("active");
