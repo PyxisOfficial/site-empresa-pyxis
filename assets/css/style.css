@@ -89,7 +89,7 @@ body {
 .splash img {
     width: 8rem;
     transition: all 2;
-    animation: 1s fadeIn ease-in-out forwards, 4s spin ease-in-out .4s infinite;
+    animation: .5s fadeIn ease-in-out forwards, 4s spin ease-in-out .4s infinite;
 }
 
 @keyframes fadeIn {
