@@ -1,6 +1,5 @@
 const html = document.getElementsByTagName('html')[0],
     splash = document.querySelector('.splash'),
-    scrollFinger = document.getElementById('scrollFinger'),
     bgEstrelas = document.getElementById('estrelas'),
     nav = document.getElementById('nav'),
     logo = document.getElementById('logo'),
@@ -39,7 +38,6 @@ function handleMenu() {
 function changeNav() {
     nav.classList.toggle('nav-ativo', scrollY > 0);
     navList.classList.toggle('nav-list-branco', scrollY > 0);
-    scrollFinger.classList.toggle('hide', scrollY > 0)
 
     if (scrollY === 0) {
         logo.setAttribute('src', 'assets/img/logos/pyxis-branca-sem-slogan.png');
