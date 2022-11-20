@@ -148,8 +148,8 @@ document.addEventListener('keypress', () => {
     }
 });
 
-window.addEventListener('scroll', changeNav);
-window.addEventListener('scroll', animateElements);
+window.addEventListener('scroll', _.debounce(changeNav, 80));
+window.addEventListener('scroll', _.debounce(animateElements, 80));
 mobileMenu.addEventListener('click', handleMenu);
 btnSubmit.addEventListener('click', validateInputs);
 inputNome.addEventListener('input', removeInputsError);
