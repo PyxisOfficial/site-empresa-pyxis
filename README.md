@@ -29,4 +29,4 @@
 
 ## 🔗 Link do site
 
-‣ [Clique aqui para acessar](https://pyxisofficial.github.io/siteEmpresaPyxis/)
+‣ [Clique aqui para acessar](https://pyxisofficial.github.io/site-empresa-pyxis/)
